@@ -1,0 +1,36 @@
+<div>
+  <div class="title" [class.loading]="loadingCurrentData">
+    <h1>Tasks:</h1>
+    <div *ngIf="loadingCurrentData" class="cssload-loader"></div>
+  </div>
+  <div class="d-flex justify-content-between pagination-wrapper">
+    <div class="d-flex justify-content-between">
+      <ngb-pagination *ngIf="currentData.length !== 0" [collectionSize]="totalElements" [(page)]="page" [maxSize]="5" [pageSize]="pageSize" [rotate]="true" [boundaryLinks]="true" (pageChange)="changePage($event)"></ngb-pagination>
+      <div class="type-filter-box">
+        <button class="btn" [ngClass]="{'btn-primary inactive': roleFilter === 'collector', 'btn-outline-primary': roleFilter !== 'collector'}" (click)="setRoleFilter('collector')">Collectors</button>
+        <button class="btn" [ngClass]="{'btn-primary inactive': roleFilter === 'reviewer', 'btn-outline-primary': roleFilter !== 'reviewer'}" (click)="setRoleFilter('reviewer')">Reviewers</button>
+      </div>
+      <div class="search-box">
+        <select [(ngModel)]="userFilter" (ngModelChange)="changePage(1)" class="d-block w-100 custom-select">
+          <option [selected]="!userFilter" [value]="''">Select {{roleFilter | titleCase}}</option>
+          <option *ngFor="let user of users$ | async"
+                  [selected]="userFilter === user.email"
+                  [value]="user.email">{{user.name + " " + user.surname | titleCase}}</option>
+        </select>
+      </div>
+
+    </div>
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-secondary dropdown-toggle" id="itemsPerPageDropdown" ngbDropdownToggle>
+        {{pageSize}}
+      </button>
+      <div class="dropdown-menu" aria-labelledby="itemsPerPageDropdown">
+        <button type="button" *ngFor="let itemsNumber of pageSizes" id="history-selector" class="dropdown-item" (click)="setPageSize(itemsNumber)">
+          {{itemsNumber}}
+        </button>
+      </div>
+    </div>
+  </div>
+  <mita-task-table *ngIf="!loadingCurrentData" [tasks]="currentData" [role]="roleFilter"></mita-task-table>
+  <ngb-pagination *ngIf="!loadingCurrentData && currentData.length !== 0" [collectionSize]="totalElements" [(page)]="page" [maxSize]="5" [pageSize]="pageSize" [rotate]="true" [boundaryLinks]="true" (pageChange)="changePage($event)"></ngb-pagination>
+</div>

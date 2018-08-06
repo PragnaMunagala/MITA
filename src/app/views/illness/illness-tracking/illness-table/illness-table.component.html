@@ -1,0 +1,28 @@
+<div>
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Illness</th>
+      <th>State</th>
+      <th>User</th>
+      <th>Task ID</th>
+      <th>Version</th>
+      <th>Date Created</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let illness of illnesses; let idx = index" class="row-current"
+          [ngClass]="{'selected': (illness.id_icd10_code === selectedIllnessICD) && (illness.version_number === selectedIllnessVersion),
+                      'disabled': illness.tracking_state.state_name === 'Unassigned' || illness.tracking_state.state_name === 'Unassigned from rejected' || (illness.id_icd10_code === selectedIllnessICD) && (illness.version_number === selectedIllnessVersion)}"
+          (click)="illness.tracking_state.state_name === 'Unassigned' || illness.tracking_state.state_name === 'Unassigned from rejected' || ((illness.id_icd10_code === selectedIllnessICD) && (illness.version_number === selectedIllnessVersion)) ? '' : illnessSelected.emit(idx)">
+        <td>{{illness.id_icd10_code}}</td>
+        <td>{{illness.tracking_state.state_name}}</td>
+        <td>{{illness.userName}} {{illness.userSurname}}</td>
+        <td>{{illness.taskId}}</td>
+        <td>{{illness.version_number}}</td>
+        <td>{{illness.created_on | date}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <span *ngIf="illnesses.length === 0" class="no-results"><i>No results found.</i></span>
+</div>

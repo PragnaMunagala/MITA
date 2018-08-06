@@ -1,0 +1,18 @@
+<div *ngIf="loadingData" class="cssload-loader"></div>
+<div *ngIf="!loadingData">
+  <div class="title-box alert alert-info mt-4 mb-4">
+    <h2>USERS</h2>
+    <div>
+      <a class="btn btn-success btn-icon-inline" [routerLink]="['/users/new']">
+      <i class="material-icons mi-24 mr-2">add</i>
+      Add
+    </a>
+    </div>
+  </div>
+
+  <mita-user-table [users]="collectors" role="collector" (removeUserFromView)="removeCollector($event)"></mita-user-table>
+  <mita-user-table [users]="reviewers" role="reviewer" (removeUserFromView)="removeReviewer($event)"></mita-user-table>
+  <mita-user-table [users]="administrators" role="administrator" (removeUserFromView)="removeAdministrator($event)"></mita-user-table>
+</div>
+
+

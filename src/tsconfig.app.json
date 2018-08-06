@@ -1,0 +1,19 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "module": "es2015",
+    "baseUrl": "",
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    // "noImplicitReturns": false,
+    "noImplicitThis": true,
+    "strictNullChecks": true
+    // Use it if you get duplicate typings
+    // "types": []
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}

@@ -1,0 +1,41 @@
+stages:
+  - test
+  - deploy
+
+before_script:
+    - export NVM_DIR="$HOME/.nvm"
+    - source "$NVM_DIR/nvm.sh"
+    - source "$NVM_DIR/bash_completion"
+    - npm i
+
+test:
+  stage: test
+  tags:
+    - ansible
+  only:
+    - Development
+    - master
+  script:
+    - npm run test:ubuntu
+
+deploy_dev:
+  stage: deploy
+  tags:
+    - ansible
+  only:
+    - Development
+  script:
+    - npm run version:up
+    - npm run build:staging
+    - npm run version:tag
+    - npm run deploy:staging
+
+deploy_prod:
+  stage: deploy
+  tags:
+    - ansible
+  only:
+    - master
+  script:
+    - npm run build
+    - npm run deploy

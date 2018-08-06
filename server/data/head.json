@@ -1,0 +1,156 @@
+[
+    {
+        "id": 1,
+        "block": "A00-A09",
+        "description": "Intestinal infectious diseases",
+        "totalInBlock": 1716,
+        "notAssigned": 1716
+    },
+    {
+        "id": 2,
+        "block": "A15-A19",
+        "description": "Tuberculosis",
+        "totalInBlock": 1122,
+        "notAssigned": 1122
+    },
+    {
+        "id": 3,
+        "block": "A20-A28",
+        "description": "Certain zoonotic bacterial diseases",
+        "totalInBlock": 1034,
+        "notAssigned": 1034
+    },
+    {
+        "id": 4,
+        "block": "A30-A49",
+        "description": "Other bacterial diseases",
+        "totalInBlock": 2508,
+        "notAssigned": 2508
+    },
+    {
+        "id": 5,
+        "block": "A50-A64",
+        "description": "Infections with a predominantly sexual mode of transmission",
+        "totalInBlock": 3124,
+        "notAssigned": 3124
+    },
+    {
+        "id": 6,
+        "block": "A65-A69",
+        "description": "Other spirochetal diseases",
+        "totalInBlock": 616,
+        "notAssigned": 616
+    },
+    {
+        "id": 7,
+        "block": "A70-A74",
+        "description": "Other diseases caused by chlamydiae",
+        "totalInBlock": 176,
+        "notAssigned": 176
+    },
+    {
+        "id": 8,
+        "block": "A75-A79",
+        "description": "Rickettsioses",
+        "totalInBlock": 440,
+        "notAssigned": 440
+    },
+    {
+        "id": 9,
+        "block": "A80-A89",
+        "description": "Viral and prion infections of the central nervous system",
+        "totalInBlock": 1034,
+        "notAssigned": 1034
+    },
+    {
+        "id": 10,
+        "block": "A90-A99",
+        "description": "Arthropod-borne viral fevers and viral hemorrhagic fevers",
+        "totalInBlock": 748,
+        "notAssigned": 748
+    },
+    {
+        "id": 11,
+        "block": "B00-B09",
+        "description": "Viral infections characterized by skin and mucous membrane lesions",
+        "totalInBlock": 1782,
+        "notAssigned": 1782
+    },
+    {
+        "id": 12,
+        "block": "B10",
+        "description": "Other human herpesviruses",
+        "totalInBlock": 110,
+        "notAssigned": 110
+    },
+    {
+        "id": 13,
+        "block": "B15-B19",
+        "description": "Viral hepatitis",
+        "totalInBlock": 506,
+        "notAssigned": 506
+    },
+    {
+        "id": 14,
+        "block": "B20",
+        "description": "Human immunodeficiency virus [HIV] disease",
+        "totalInBlock": 22,
+        "notAssigned": 22
+    },
+    {
+        "id": 15,
+        "block": "B25-B34",
+        "description": "Other viral diseases",
+        "totalInBlock": 1210,
+        "notAssigned": 1210
+    },
+    {
+        "id": 16,
+        "block": "B35-B49",
+        "description": "Mycoses",
+        "totalInBlock": 2662,
+        "notAssigned": 2662
+    },
+    {
+        "id": 17,
+        "block": "B50-B64",
+        "description": "Protozoal diseases",
+        "totalInBlock": 1166,
+        "notAssigned": 1166
+    },
+    {
+        "id": 18,
+        "block": "B65-B83",
+        "description": "Helminthiases",
+        "totalInBlock": 2178,
+        "notAssigned": 2178
+    },
+    {
+        "id": 19,
+        "block": "B85-B89",
+        "description": "Pediculosis, acariasis and other infestations",
+        "totalInBlock": 484,
+        "notAssigned": 484
+    },
+    {
+        "id": 20,
+        "block": "B90-B94",
+        "description": "Sequelae of infectious and parasitic diseases",
+        "totalInBlock": 264,
+        "notAssigned": 264
+    },
+    {
+        "id": 21,
+        "block": "B95-B97",
+        "description": "Bacterial and viral infectious agents",
+        "totalInBlock": 990,
+        "notAssigned": 990
+    },
+    {
+        "id": 22,
+        "block": "B99",
+        "description": "Other infectious diseases",
+        "totalInBlock": 44,
+        "notAssigned": 44
+    }
+]

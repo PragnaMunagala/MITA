@@ -1,0 +1,38 @@
+<div>
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th colspan="2" class="text-center">Assigned To</th>
+      <th>Task Type</th>
+      <th>Date Assigned</th>
+      <th>Date Completed</th>
+      <th>Original Count</th>
+      <th *ngIf="role === 'collector'">Total Skipped</th>
+      <th *ngIf="role === 'collector'">Total Rejected</th>
+    </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let row of tasks; let idx = index">
+        <tr class="row-current" [ngClass]="{'selected disabled': idx === selectedTaskIdx}" (click)="selectTask(idx)">
+          <td>{{row.user.name}} {{row.user.surname}}</td>
+          <td>{{row.user.email}}</td>
+          <td>{{row.user.role.name}}</td>
+          <td>{{row.dateAssigned | date}}</td>
+          <td>{{(row.dateCompleted | date) || "-"}}</td>
+          <td>{{row.originalCount}}</td>
+          <td *ngIf="role === 'collector'">{{row.totalSkipped}}</td>
+          <td *ngIf="role === 'collector'">{{row.totalRejected}}</td>
+        </tr>
+        <tr *ngIf="idx === selectedTaskIdx">
+          <td colspan="8" class="illnesses-box">
+            <div>
+              <h6>Illnesses:</h6>
+              <MITA-task-illness-table [illnesses]="row.illnessList"></MITA-task-illness-table>
+            </div>
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+  <span *ngIf="tasks.length === 0" class="no-results"><i>No results found.</i></span>
+</div>

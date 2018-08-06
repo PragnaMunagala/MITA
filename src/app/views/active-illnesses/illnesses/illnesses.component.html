@@ -1,0 +1,80 @@
+<div *ngIf="loading" class="cssload-loader"></div>
+<div *ngIf="!loading">
+  <header class="assigner-header">
+    <h1 class="text-center pt-2">Active Illnesses</h1>
+  </header>
+  <div class="row">
+    <div class="search-group">
+      <span class="material-icons">search</span>
+      <input type="text" placeholder="Search for an illness" (input)="searchInput($event.target.value)"/>
+    </div>
+    <div ngbDropdown class="d-inline-block search-type">
+      <span style="font-weight: bold;">Search Type: </span>
+      <button class="btn btn-secondary dropdown-toggle" id="optionSearch" ngbDropdownToggle>
+        {{searchType}}
+      </button>
+      <div class="dropdown-menu" aria-labelledby="optionSearch">
+        <button type="button" *ngFor="let type of searchTypes" class="dropdown-item" (click)="setSearchType(type)">
+          {{type}}
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div *ngIf="!rows.length"><p>No illness found. Please refine your search and try again</p></div>
+    <div *ngIf="rows.length" class="d-flex justify-content-between w-100">
+      <div class="d-inline-block ml-2">
+        <ngb-pagination [collectionSize]="totalElements" [(page)]="page" [maxSize]="5" [pageSize]="pageSize" [rotate]="true" [boundaryLinks]="true" (pageChange)="changePage($event)"></ngb-pagination>
+        <p>Total active illnesses: {{totalElements}}</p>
+      </div>
+      <div ngbDropdown class="d-inline-block ml-2">
+        <button class="btn btn-secondary dropdown-toggle" id="itemsPerPageDropdown" ngbDropdownToggle>
+          {{pageSize}}
+        </button>
+        <div class="dropdown-menu" aria-labelledby="itemsPerPageDropdown">
+          <button type="button" *ngFor="let itemsNumber of pageSizes" id="history-selector" class="dropdown-item" (click)="setPageSize(itemsNumber)">
+            {{itemsNumber}}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="rows.length">
+    <table class="table table-hover illness-blocks mt-3">
+      <thead>
+      <tr>
+        <th>Icd 10 Code</th>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Version</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let row of rows; let i=index" class="section-row" (click)="selectedRow(row, i)" [ngClass]="{'selected': selected[i] == true}">
+        <td>{{row.icd10Code}}</td>
+        <td>{{row.name}}</td>
+        <td>{{row.status}}</td>
+        <td>{{row.version}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="data-save" *ngIf="dataSaved">Data is saved successfully</p>
+  <div class="row save" *ngIf="rows.length">
+    <div class="col-lg-8 col-sm-12 col-xs-12 col-md-8 outer">
+      <div *ngIf="selectedRows.length != 0">
+        <p class="no-data">Selected Illnesses</p>
+        <span *ngFor="let item of selectedRows" class="badge badge-pill badge-success mr-1 block">{{item.icd10Code}} (v{{item.version}})</span>
+      </div>
+      <div *ngIf="selectedRows.length == 0" class="inner">
+        <p class="no-data">No Illness selected</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-12 col-xs-12 col-md-4 outer">
+      <div class="inner">
+        <button [disabled]="selectedRows.length == 0" class="btn btn-success" (click)="saveDataFrame()">Submit</button>
+        <button [disabled]="selectedRows.length == 0" class="btn btn-danger" (click)="cancelSave()">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>

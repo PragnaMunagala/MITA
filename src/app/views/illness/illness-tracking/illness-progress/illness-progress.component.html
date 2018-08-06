@@ -1,0 +1,59 @@
+<div>
+  <h2>Progress <span *ngIf="progress">of {{progress.id_icd10_code}}</span></h2>
+  <div *ngIf="!progress && progress !== null">
+    <span>Click on illness row above to see its related tasks.</span>
+  </div>
+  <div *ngIf="progress === null">
+    <span><i>No related tasks.</i></span>
+  </div>
+  <ngb-tabset *ngIf="progress">
+    <ngb-tab title="Collector's Task" *ngIf="progress.task_collector">
+      <ng-template ngbTabContent>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>Assigned To</th>
+            <th>Date Assigned</th>
+            <th>Date Completed</th>
+            <th>Original Count</th>
+            <th>Total Rejected</th>
+            <th>Total Skipped</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="row-current">
+            <td>{{progress.task_collector.user.name}} {{progress.task_collector.user.surname}}</td>
+            <td>{{progress.task_collector.dateAssigned | date}}</td>
+            <td>{{progress.task_collector.dateCompleted ? (progress.task_collector.dateCompleted | date) : '-'}}</td>
+            <td>{{progress.task_collector.originalCount}}</td>
+            <td>{{progress.task_collector.totalRejected}}</td>
+            <td>{{progress.task_collector.totalSkipped}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Reviewer's Task" *ngIf="progress.task_reviewer">
+      <ng-template ngbTabContent>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>Assigned To</th>
+            <th>Date Assigned</th>
+            <th>Date Completed</th>
+            <th>Original Count</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="row-current">
+            <td>{{progress.task_reviewer.user.name}} {{progress.task_reviewer.user.surname}}</td>
+            <td>{{progress.task_reviewer.dateAssigned | date}}</td>
+            <td>{{progress.task_reviewer.dateCompleted ? (progress.task_reviewer.dateCompleted | date) : '-'}}</td>
+            <td>{{progress.task_reviewer.originalCount}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>

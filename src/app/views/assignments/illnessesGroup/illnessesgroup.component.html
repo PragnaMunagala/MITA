@@ -1,0 +1,55 @@
+<div *ngIf="!rows || rows.length === 0" class="cssload-loader"></div>
+<div *ngIf="rows && rows.length > 0">
+  <header class="assigner-header">
+    <h1 class="text-center pt-2">{{title}}</h1>
+  </header>
+  <div class="row">
+    <table class="table table-hover illness-blocks mt-3">
+      <thead>
+        <tr>
+          <th colspan="3"></th>
+          <th colspan="2" class="text-center">Illnesses</th>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Block</th>
+          <th>Description</th>
+          <th class="text-center">Total</th>
+          <th *ngIf="role === 'collector'" class="text-center">To Be Assigned First Time</th>
+          <th *ngIf="role === 'reviewer'" class="text-center">To Be Reviewed First Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr (click)="row.subBlock ? expandRow(row, i, $event) : selectBlock(row, i, $event)" *ngFor="let row of rows; let i = index"
+            class="section-row"
+            [hidden]="(row.parentGroupId || row.notGrouped) && !isSubgroupVisible(i)"
+            [ngClass]="{'table-info': isSelected(row) && row.subBlock,
+                        'table-success': isSelected(row) && !row.subBlock,
+                        'subgroup': row.parentGroupId || row.notGrouped,
+                        'expandable': row.subBlock
+                        }">
+          <td>
+            <span *ngIf="row.subBlock">
+              <i *ngIf="expanded.row !== i" class="material-icons">arrow_right</i>
+              <i *ngIf="expanded.row === i" class="material-icons">arrow_drop_down</i>
+            </span>
+          </td>
+          <td scope="row">{{row.block}}</td>
+          <td>{{row.description}}</td>
+          <td class="text-center"><span class="badge badge-pill badge-default">{{row.totalinblock}}</span></td>
+          <td class="text-center">
+            <span class="badge badge-pill"
+                  [ngClass]="{
+                    'badge-success': row.notassigned === 0,
+                    'badge-warning': row.notassigned < row.totalinblock && row.notassigned > 0,
+                    'badge-danger': row.notassigned === row.totalinblock
+                  }">
+              {{row.notassigned}}
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <mita-assigner *ngIf="rows" [readOnly]="false" (selectAll)="selectBlockAll()"></mita-assigner>
+</div>

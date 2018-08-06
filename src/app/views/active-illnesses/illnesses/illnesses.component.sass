@@ -1,0 +1,74 @@
+.save
+  height: 150px
+  background: #636c72
+  padding: 10px
+  margin-bottom: 10px
+  & button
+    cursor: pointer
+    width: fit-content
+    height: 45px
+    font-weight: bold
+
+.outer
+  position: relative
+  padding: 10px
+
+.inner
+  position: absolute
+  top: 50px
+  left: 30px
+
+.search-group
+  width: 50%
+  border: 1px solid rgba(0, 0, 0, 0.15)
+  border-radius: 0.3rem
+  position: relative
+  height: 50px
+  margin: 40px 10px
+
+.dropdown-menu
+  top: unset
+
+input
+  &:focus
+    outline: none
+
+.search-group
+  & input
+    position: absolute
+    width: 80%
+    display: inline
+    border: none
+    left: 7%
+    top: 22%
+    padding-left: 0
+
+.search-group
+  & span
+    position:  absolute
+    opacity: 0.5
+    left: 1.5%
+    top: 25%
+
+.search-type
+  margin: 40px 10px
+
+tbody
+  & tr
+    &:hover
+      cursor: pointer
+
+.selected
+  background-color: #dff0d8
+
+.no-data
+  color: #ffffff
+  font-weight: bold
+  font-size: 20px
+
+.data-save
+  font-weight: bold
+  font-size: large
+  width: 100%
+  text-align: center
+  color: green

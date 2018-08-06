@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "block": "A00",
+        "description": "Cholera",
+        "totalInBlock": 3,
+        "notAssigned": 3
+    },
+    {
+        "id": 2,
+        "block": "A01",
+        "description": "Typhoid and paratyphoid fevers",
+        "totalInBlock": 11,
+        "notAssigned": 11
+    },
+    {
+        "id": 3,
+        "block": "A02",
+        "description": "Other salmonella infections",
+        "totalInBlock": 11,
+        "notAssigned": 11
+    },
+    {
+        "id": 4,
+        "block": "A03",
+        "description": "Shigellosis",
+        "totalInBlock": 6,
+        "notAssigned": 6
+    },
+    {
+        "id": 5,
+        "block": "A04",
+        "description": "Other bacterial intestinal infections",
+        "totalInBlock": 10,
+        "notAssigned": 10
+    },
+    {
+        "id": 6,
+        "block": "A05",
+        "description": "Other bacterial foodborne intoxications, not elsewhere classified",
+        "totalInBlock": 8,
+        "notAssigned": 8
+    },
+    {
+        "id": 7,
+        "block": "A06",
+        "description": "Amebiasis",
+        "totalInBlock": 12,
+        "notAssigned": 12
+    },
+    {
+        "id": 8,
+        "block": "A07",
+        "description": "Other protozoal intestinal diseases",
+        "totalInBlock": 7,
+        "notAssigned": 7
+    },
+    {
+        "id": 9,
+        "block": "A08",
+        "description": "Viral and other specified intestinal infections",
+        "totalInBlock": 9,
+        "notAssigned": 9
+    },
+    {
+        "id": 10,
+        "block": "A09",
+        "description": "Infectious gastroenteritis and colitis, unspecified",
+        "totalInBlock": 1,
+        "notAssigned": 1
+    }
+]

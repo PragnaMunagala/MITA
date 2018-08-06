@@ -1,0 +1,31 @@
+@import "../../../../styles/bootstrap/variables"
+@import "../../../../styles/bootstrap/mixins"
+
+.role
+  border: 2px solid $gray-lighter
+  align-items: center
+  display: flex
+  margin-bottom: 1rem
+  padding-right: 20px
+  padding-left: 1rem
+  margin-right: -5px
+  position: relative
+
+.breadcrumb
+  li
+    &:first-of-type
+      padding-left: calc(1.5rem + 1px)
+
+@include media-breakpoint-up(md)
+  .role
+    &::after
+      border-color: transparent transparent transparent $white
+      border-style: solid
+      border-width: calc(1.5rem - 2px) 0 calc(1.5rem - 2px) calc(1.5rem - 1px)
+      content: ""
+      height: 0
+      position: absolute
+      right: calc(-1.5rem + 4px)
+      top: 0
+      width: 0
+      z-index: 10

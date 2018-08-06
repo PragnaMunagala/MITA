@@ -1,0 +1,451 @@
+{
+  "chapter": [
+    {
+        "id": 1,
+        "block": "A00-B99",
+        "description": "Certain infectious and parasitic diseases",
+        "totalInBlock": 1088,
+        "notAssigned": 1088
+    },
+    {
+        "id": 2,
+        "block": "C00-D49",
+        "description": "Neoplasms",
+        "totalInBlock": 1553,
+        "notAssigned": 1553
+    },
+    {
+        "id": 3,
+        "block": "D50-D89",
+        "description": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism",
+        "totalInBlock": 256,
+        "notAssigned": 256
+    },
+    {
+        "id": 4,
+        "block": "E00-E89",
+        "description": "Endocrine, nutritional and metabolic diseases",
+        "totalInBlock": 765,
+        "notAssigned": 765
+    },
+    {
+        "id": 5,
+        "block": "F01-F99",
+        "description": "Mental, Behavioral and Neurodevelopmental disorders",
+        "totalInBlock": 568,
+        "notAssigned": 568
+    },
+    {
+        "id": 6,
+        "block": "G00-G99",
+        "description": "Diseases of the nervous system",
+        "totalInBlock": 1244,
+        "notAssigned": 1244
+    },
+    {
+        "id": 7,
+        "block": "H00-H59",
+        "description": "Diseases of the eye and adnexa",
+        "totalInBlock": 2463,
+        "notAssigned": 2463
+    },
+    {
+        "id": 8,
+        "block": "H60-H95",
+        "description": "Diseases of the ear and mastoid process",
+        "totalInBlock": 1063,
+        "notAssigned": 1063
+    },
+    {
+        "id": 9,
+        "block": "I00-I99",
+        "description": "Diseases of the circulatory system",
+        "totalInBlock": 1122,
+        "notAssigned": 1122
+    },
+    {
+        "id": 10,
+        "block": "J00-J99",
+        "description": "Diseases of the respiratory system",
+        "totalInBlock": 394,
+        "notAssigned": 394
+    },
+    {
+        "id": 11,
+        "block": "K00-K95",
+        "description": "Diseases of the digestive system",
+        "totalInBlock": 1195,
+        "notAssigned": 1195
+    },
+    {
+        "id": 12,
+        "block": "L00-L99",
+        "description": "Diseases of the skin and subcutaneous tissue",
+        "totalInBlock": 489,
+        "notAssigned": 489
+    },
+    {
+        "id": 13,
+        "block": "M00-M99",
+        "description": "Diseases of the musculoskeletal system and connective tissue",
+        "totalInBlock": 5155,
+        "notAssigned": 5155
+    },
+    {
+        "id": 14,
+        "block": "N00-N99",
+        "description": "Diseases of the genitourinary system",
+        "totalInBlock": 762,
+        "notAssigned": 762
+    },
+    {
+        "id": 15,
+        "block": "O00-O9A",
+        "description": "Pregnancy, childbirth and the puerperium",
+        "totalInBlock": 1439,
+        "notAssigned": 1439
+    },
+    {
+        "id": 16,
+        "block": "P00-P96",
+        "description": "Certain conditions originating in the perinatal period",
+        "totalInBlock": 479,
+        "notAssigned": 479
+    },
+    {
+        "id": 17,
+        "block": "Q00-Q99",
+        "description": "Congenital malformations, deformations and chromosomal abnormalities",
+        "totalInBlock": 1066,
+        "notAssigned": 1066
+    },
+    {
+        "id": 18,
+        "block": "R00-R99",
+        "description": "Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified",
+        "totalInBlock": 637,
+        "notAssigned": 637
+    },
+    {
+        "id": 19,
+        "block": "S00-T88",
+        "description": "Injury, poisoning and certain other consequences of external causes",
+        "totalInBlock": 5657,
+        "notAssigned": 5657
+    },
+    {
+        "id": 20,
+        "block": "V00-Y99",
+        "description": "External causes of morbidity",
+        "totalInBlock": 4327,
+        "notAssigned": 4327
+    },
+    {
+        "id": 21,
+        "block": "Z00-Z99",
+        "description": "Factors influencing health status and contact with health services",
+        "totalInBlock": 3212,
+        "notAssigned": 3212
+    }
+  ],
+  "head": [
+    {
+        "id": 1,
+        "block": "A00-A09",
+        "description": "Intestinal infectious diseases",
+        "totalInBlock": 1716,
+        "notAssigned": 1716
+    },
+    {
+        "id": 2,
+        "block": "A15-A19",
+        "description": "Tuberculosis",
+        "totalInBlock": 1122,
+        "notAssigned": 1122
+    },
+    {
+        "id": 3,
+        "block": "A20-A28",
+        "description": "Certain zoonotic bacterial diseases",
+        "totalInBlock": 1034,
+        "notAssigned": 1034
+    },
+    {
+        "id": 4,
+        "block": "A30-A49",
+        "description": "Other bacterial diseases",
+        "totalInBlock": 2508,
+        "notAssigned": 2508
+    },
+    {
+        "id": 5,
+        "block": "A50-A64",
+        "description": "Infections with a predominantly sexual mode of transmission",
+        "totalInBlock": 3124,
+        "notAssigned": 3124
+    },
+    {
+        "id": 6,
+        "block": "A65-A69",
+        "description": "Other spirochetal diseases",
+        "totalInBlock": 616,
+        "notAssigned": 616
+    },
+    {
+        "id": 7,
+        "block": "A70-A74",
+        "description": "Other diseases caused by chlamydiae",
+        "totalInBlock": 176,
+        "notAssigned": 176
+    },
+    {
+        "id": 8,
+        "block": "A75-A79",
+        "description": "Rickettsioses",
+        "totalInBlock": 440,
+        "notAssigned": 440
+    },
+    {
+        "id": 9,
+        "block": "A80-A89",
+        "description": "Viral and prion infections of the central nervous system",
+        "totalInBlock": 1034,
+        "notAssigned": 1034
+    },
+    {
+        "id": 10,
+        "block": "A90-A99",
+        "description": "Arthropod-borne viral fevers and viral hemorrhagic fevers",
+        "totalInBlock": 748,
+        "notAssigned": 748
+    },
+    {
+        "id": 11,
+        "block": "B00-B09",
+        "description": "Viral infections characterized by skin and mucous membrane lesions",
+        "totalInBlock": 1782,
+        "notAssigned": 1782
+    },
+    {
+        "id": 12,
+        "block": "B10",
+        "description": "Other human herpesviruses",
+        "totalInBlock": 110,
+        "notAssigned": 110
+    },
+    {
+        "id": 13,
+        "block": "B15-B19",
+        "description": "Viral hepatitis",
+        "totalInBlock": 506,
+        "notAssigned": 506
+    },
+    {
+        "id": 14,
+        "block": "B20",
+        "description": "Human immunodeficiency virus [HIV] disease",
+        "totalInBlock": 22,
+        "notAssigned": 22
+    },
+    {
+        "id": 15,
+        "block": "B25-B34",
+        "description": "Other viral diseases",
+        "totalInBlock": 1210,
+        "notAssigned": 1210
+    },
+    {
+        "id": 16,
+        "block": "B35-B49",
+        "description": "Mycoses",
+        "totalInBlock": 2662,
+        "notAssigned": 2662
+    },
+    {
+        "id": 17,
+        "block": "B50-B64",
+        "description": "Protozoal diseases",
+        "totalInBlock": 1166,
+        "notAssigned": 1166
+    },
+    {
+        "id": 18,
+        "block": "B65-B83",
+        "description": "Helminthiases",
+        "totalInBlock": 2178,
+        "notAssigned": 2178
+    },
+    {
+        "id": 19,
+        "block": "B85-B89",
+        "description": "Pediculosis, acariasis and other infestations",
+        "totalInBlock": 484,
+        "notAssigned": 484
+    },
+    {
+        "id": 20,
+        "block": "B90-B94",
+        "description": "Sequelae of infectious and parasitic diseases",
+        "totalInBlock": 264,
+        "notAssigned": 264
+    },
+    {
+        "id": 21,
+        "block": "B95-B97",
+        "description": "Bacterial and viral infectious agents",
+        "totalInBlock": 990,
+        "notAssigned": 990
+    },
+    {
+        "id": 22,
+        "block": "B99",
+        "description": "Other infectious diseases",
+        "totalInBlock": 44,
+        "notAssigned": 44
+    }
+  ],
+  "section": [
+    {
+        "id": 1,
+        "block": "A00",
+        "description": "Cholera",
+        "totalInBlock": 3,
+        "notAssigned": 3
+    },
+    {
+        "id": 2,
+        "block": "A01",
+        "description": "Typhoid and paratyphoid fevers",
+        "totalInBlock": 11,
+        "notAssigned": 11
+    },
+    {
+        "id": 3,
+        "block": "A02",
+        "description": "Other salmonella infections",
+        "totalInBlock": 11,
+        "notAssigned": 11
+    },
+    {
+        "id": 4,
+        "block": "A03",
+        "description": "Shigellosis",
+        "totalInBlock": 6,
+        "notAssigned": 6
+    },
+    {
+        "id": 5,
+        "block": "A04",
+        "description": "Other bacterial intestinal infections",
+        "totalInBlock": 10,
+        "notAssigned": 10
+    },
+    {
+        "id": 6,
+        "block": "A05",
+        "description": "Other bacterial foodborne intoxications, not elsewhere classified",
+        "totalInBlock": 8,
+        "notAssigned": 8
+    },
+    {
+        "id": 7,
+        "block": "A06",
+        "description": "Amebiasis",
+        "totalInBlock": 12,
+        "notAssigned": 12
+    },
+    {
+        "id": 8,
+        "block": "A07",
+        "description": "Other protozoal intestinal diseases",
+        "totalInBlock": 7,
+        "notAssigned": 7
+    },
+    {
+        "id": 9,
+        "block": "A08",
+        "description": "Viral and other specified intestinal infections",
+        "totalInBlock": 9,
+        "notAssigned": 9
+    },
+    {
+        "id": 10,
+        "block": "A09",
+        "description": "Infectious gastroenteritis and colitis, unspecified",
+        "totalInBlock": 1,
+        "notAssigned": 1
+    }
+  ],
+  "user": [
+    {
+        "userId": 1,
+        "roleId": {
+            "roleId": 1,
+            "name": "Collector",
+            "description": "Person completing illness form"
+        },
+        "name": "John",
+        "surname": "Doe"
+    },
+    {
+        "userId": 2,
+        "roleId": {
+            "roleId": 1,
+            "name": "Collector",
+            "description": "Person completing illness form"
+        },
+        "name": "Mary",
+        "surname": "Smith"
+    },
+    {
+        "userId": 3,
+        "roleId": {
+            "roleId": 1,
+            "name": "Collector",
+            "description": "Person completing illness form"
+        },
+        "name": "Juan",
+        "surname": "Jimenez"
+    },
+    {
+        "userId": 4,
+        "roleId": {
+            "roleId": 1,
+            "name": "Collector",
+            "description": "Person completing illness form"
+        },
+        "name": "Jim",
+        "surname": "Shelby"
+    },
+    {
+        "userId": 5,
+        "roleId": {
+            "roleId": 2,
+            "name": "Reviewer",
+            "description": "Person reviewing block jobs"
+        },
+        "name": "Laura",
+        "surname": "Fowler"
+    },
+    {
+        "userId": 6,
+        "roleId": {
+            "roleId": 2,
+            "name": "Reviewer",
+            "description": "Person reviewing block jobs"
+        },
+        "name": "Rod",
+        "surname": "Nelson"
+    },
+    {
+        "userId": 7,
+        "roleId": {
+            "roleId": 3,
+            "name": "Administrator",
+            "description": "Person assigning block jobs. Admin, of MITA system"
+        },
+        "name": "Michael",
+        "surname": "Kidroy"
+    }
+  ]
+}

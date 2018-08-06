@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./styles/bootstrap/bootstrap"
+@import "./styles/material-icons"
+@import "./styles/spinner.css"
+
+body
+  overflow-y: scroll
+
+.tooltip-inner
+  font-size: 115%
+
+// ng2-select incompatible with bootstrap 4
+// TODO: Remove when it is
+.ui-select-choices
+  display: block
+
+.btn
+  text-transform: uppercase
+
+.btn-icon
+  align-items: center
+  display: flex
+
+.btn-icon-inline
+  align-items: center
+  display: inline-flex
+  i
+    margin-right: .2rem
+    margin-top: -1px
+
+.modal-open
+  padding-right: 15px
+
+.auth0-lock
+  &.auth0-lock-opened
+    z-index: 1000 !important // place underneath error modal

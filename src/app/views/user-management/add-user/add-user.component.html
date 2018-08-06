@@ -1,0 +1,66 @@
+<div *ngIf="requestingToken" class="cssload-loader"></div>
+<div *ngIf="!requestingToken" class="row align-items-center justify-content-center card-container">
+  <div class="col-sm-10 col-md-8 col-lg-6 card">
+    <div class="card-block">
+      <div *ngIf="hasSuccess || errorMsg.message || errorMsg.status" class="alert alert-danger mt-2 mb-4"
+        [ngClass]="{'alert-danger': errorMsg.message, 'alert-success': hasSuccess}">
+        <button type="button" class="close" aria-label="Close" (click)="onCloseResult(hasSuccess)">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 *ngIf="hasSuccess" class="m-0">New User Created</h4>
+        <div *ngIf="!hasSuccess">
+          <h4>Unable to create new user</h4>
+          <p *ngIf="errorMsg.status">Status: {{errorMsg.status}}</p>    
+          <p>{{errorMsg.message}}<p>
+        </div>        
+      </div>
+      <form ngNativeValidate #newUser="ngForm" (ngSubmit)="onSubmit(newUser)">
+        <div class="form-group row no-gutters align-items-center justify-content-between">
+          <h4 class="card-title m-0">ADD NEW USER</h4>
+          <select ngModel required name="role" required class="custom-select"
+            oninvalid="this.setCustomValidity('Please Select a Role')" oninput="setCustomValidity('')">
+            <option [selected]="!newUser.value.role" value="" disabled>Select Role</option>
+            <option value="1">Data Collector</option>
+            <option value="2">Reviewer</option>
+            <option value="3">Administrator</option>
+          </select>
+        </div>
+        <div class="form-group row no-gutters">
+          <label class="sr-only" for="email">Email</label>
+          <div class="input-group mb-2 mb-sm-0">
+            <div class="input-group-addon"><span class="material-icons">email</span></div>
+            <input type="email" ngModel name="email" required class="form-control" id="email"
+              placeholder="Email address" oninvalid="this.setCustomValidity('Please write the new user\'s email')" oninput="setCustomValidity('')">
+          </div>
+        </div>
+        <div class="form-group row no-gutters mt-2">
+          <label class="sr-only" for="name">Name</label>
+          <div class="input-group mb-2 mb-sm-0">
+            <div class="input-group-addon"><span class="material-icons">person</span></div>
+            <input type="text" ngModel name="name" required class="form-control" id="name"
+              placeholder="Name" oninvalid="this.setCustomValidity('Please write the new user\'s name')" oninput="setCustomValidity('')">
+          </div>
+        </div>
+        <div class="form-group row no-gutters mt-2">
+          <label class="sr-only" for="surname">Surname</label>
+          <div class="input-group mb-2 mb-sm-0">
+            <div class="input-group-addon"><span class="material-icons">person</span></div>
+            <input type="text" ngModel name="surname" required class="form-control" id="surname"
+              placeholder="Surname" oninvalid="this.setCustomValidity('Please write the new user\'s surname(s)')" oninput="setCustomValidity('')">
+          </div>
+        </div>
+        <div class="form-group row no-gutters mt-2 mb-2">
+          <label class="sr-only" for="password">Password</label>
+          <div class="input-group mb-2 mb-sm-0">
+            <div class="input-group-addon"><span class="material-icons">lock</span></div>
+            <input type="password" ngModel name="password" required class="form-control" id="password"
+              placeholder="Password" oninvalid="this.setCustomValidity('Please add a password')" oninput="setCustomValidity('')">
+          </div>
+        </div>   
+        <div class="row no-gutters justify-content-end">
+          <button id="create-btn" class="btn btn-primary text-right" [disabled]="requesting">ADD</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

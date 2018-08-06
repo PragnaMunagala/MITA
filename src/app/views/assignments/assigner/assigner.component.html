@@ -1,0 +1,45 @@
+<div class="current-selection rounded bg-faded m-2 p-2">
+  <div *ngIf="(selectedGroups | async)?.length; else emptyAssigner" class="assignment-selected row justify-content-center">
+    <!--<form #assignmentForm="ngForm" (submit)="onSubmit(assignmentForm.value)">-->
+      <div class="assignment-section growing col-sm-12 col-md-6 col-lg-3">
+        <h5>Blocks Selected</h5>
+        <div>
+          <span class="badge badge-pill badge-success mr-1 block" *ngFor="let block of selectedBlockNames  | async">{{block}}</span>
+        </div>
+      </div>
+      <div class="assignment-section small col-sm-12 col-md-6 col-lg-3 text-md-right">
+        <h5>Total Assigned: <span class="badge badge-pill badge-success">{{totalAssigned | async}}</span></h5>
+      </div>
+      <div class="assignment-section right small col-sm-12 col-md-9 col-lg-4">
+        <h5 *ngIf="!showUserDropdown && assignedUserID > -1" (click)="showUserDropdown = true" class="clickable">
+          {{role | titleCase}} Assigned:
+          <span class="badge badge-pill badge-success mt-1">{{assignedUserText | async}}</span>
+        </h5>
+        <div *ngIf="showUserDropdown || assignedUserID === -1">
+          <h5 *ngIf="assignedUserID > -1" (click)="showUserDropdown = true">
+            Currently Assigned To:
+            <span class="badge badge-pill badge-success">{{assignedUserText | async}}</span>
+          </h5>
+          <div class="form-group">
+            <select (change)="assignUser($event.target.value)" class="d-block w-100 custom-select">
+              <option [selected]="assignedUserID === -1" disabled>Select {{role | titleCase}}</option>
+              <option *ngFor="let user of users | async"
+                [selected]="assignedUserID === user.id"
+                [value]="user.id">{{user.text | titleCase}}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="assignment-section buttons-container right small col-sm-12 col-md-3 col-lg-2">
+        <button [disabled]="!isReadyToSubmit() || loading" type="button" class="btn btn-primary" id ="submit" (click)="onSubmit()"><i *ngIf="loading" class="material-icons loading">sync</i>Submit</button>
+        <button type="button" class="btn btn-danger mt-1" id="cancel" (click)="cancelAssignment()">Cancel</button>
+      </div>
+    <!--</form>    -->
+  </div>
+  <ng-template #emptyAssigner>
+    <div class="row no-selection align-items-center justify-content-center">
+      <h5>NO BLOCKS SELECTED</h5>
+      <button *ngIf="!readOnly" (click)="onSelectAll()" class="btn btn-primary d-block mt-1" id="select-all">Select All</button>
+    </div>
+  </ng-template>
+</div>

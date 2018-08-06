@@ -1,0 +1,6 @@
+<div [class.container]="auth.isAuthenticated$ | async">
+  <MITA-header *ngIf="auth.isAuthenticated$ | async"></MITA-header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>

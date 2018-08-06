@@ -1,0 +1,900 @@
+{
+    "collector": {
+        "chapter": [
+            {
+                "id": 1,
+                "block": "A00-B99",
+                "description": "Certain infectious and parasitic diseases",
+                "totalinblock": 1057,
+                "notassigned": 1047
+            },
+            {
+                "id": 2,
+                "block": "C00-D49",
+                "description": "Neoplasms",
+                "totalinblock": 1631,
+                "notassigned": 1613
+            },
+            {
+                "id": 3,
+                "block": "D50-D89",
+                "description": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism",
+                "totalinblock": 247,
+                "notassigned": 237
+            },
+            {
+                "id": 4,
+                "block": "E00-E89",
+                "description": "Endocrine, nutritional and metabolic diseases",
+                "totalinblock": 705,
+                "notassigned": 705
+            },
+            {
+                "id": 5,
+                "block": "F01-F99",
+                "description": "Mental, Behavioral and Neurodevelopmental disorders",
+                "totalinblock": 733,
+                "notassigned": 733
+            },
+            {
+                "id": 6,
+                "block": "G00-G99",
+                "description": "Diseases of the nervous system",
+                "totalinblock": 613,
+                "notassigned": 613
+            },
+            {
+                "id": 7,
+                "block": "H00-H59",
+                "description": "Diseases of the eye and adnexa",
+                "totalinblock": 2321,
+                "notassigned": 2321
+            },
+            {
+                "id": 8,
+                "block": "H60-H95",
+                "description": "Diseases of the ear and mastoid process",
+                "totalinblock": 656,
+                "notassigned": 636
+            },
+            {
+                "id": 9,
+                "block": "I00-I99",
+                "description": "Diseases of the circulatory system",
+                "totalinblock": 1329,
+                "notassigned": 1329
+            },
+            {
+                "id": 10,
+                "block": "J00-J99",
+                "description": "Diseases of the respiratory system",
+                "totalinblock": 341,
+                "notassigned": 341
+            },
+            {
+                "id": 11,
+                "block": "K00-K95",
+                "description": "Diseases of the digestive system",
+                "totalinblock": 774,
+                "notassigned": 756
+            },
+            {
+                "id": 12,
+                "block": "L00-L99",
+                "description": "Diseases of the skin and subcutaneous tissue",
+                "totalinblock": 774,
+                "notassigned": 774
+            },
+            {
+                "id": 13,
+                "block": "M00-M99",
+                "description": "Diseases of the musculoskeletal system and connective tissue",
+                "totalinblock": 5301,
+                "notassigned": 5277
+            },
+            {
+                "id": 14,
+                "block": "N00-N99",
+                "description": "Diseases of the genitourinary system",
+                "totalinblock": 640,
+                "notassigned": 619
+            },
+            {
+                "id": 15,
+                "block": "O00-O9A",
+                "description": "Pregnancy, childbirth and the puerperium",
+                "totalinblock": 1320,
+                "notassigned": 1320
+            },
+            {
+                "id": 16,
+                "block": "P00-P96",
+                "description": "Certain conditions originating in the perinatal period",
+                "totalinblock": 419,
+                "notassigned": 419
+            },
+            {
+                "id": 17,
+                "block": "Q00-Q99",
+                "description": "Congenital malformations, deformations and chromosomal abnormalities",
+                "totalinblock": 808,
+                "notassigned": 808
+            },
+            {
+                "id": 18,
+                "block": "R00-R99",
+                "description": "Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified",
+                "totalinblock": 633,
+                "notassigned": 633
+            },
+            {
+                "id": 19,
+                "block": "S00-T88",
+                "description": "Injury, poisoning and certain other consequences of external causes",
+                "totalinblock": 9955,
+                "notassigned": 9953
+            },
+            {
+                "id": 20,
+                "block": "V00-Y99",
+                "description": "External causes of morbidity",
+                "totalinblock": 2590,
+                "notassigned": 2590
+            },
+            {
+                "id": 21,
+                "block": "Z00-Z99",
+                "description": "Factors influencing health status and contact with health services",
+                "totalinblock": 1215,
+                "notassigned": 1215
+            }
+        ],
+        "head": [
+            {
+                "id": 25,
+                "block": "C00-C96",
+                "description": "Malignant neoplasms (C00-C96)",
+                "totalinblock": 65,
+                "notassigned": 65
+            },
+            {
+                "id": 26,
+                "block": "C00-C75",
+                "description": "Malignant neoplasms, stated or presumed to be primary (of specified sites), and certain specified histologies, except neuroendocrine, and of lymphoid, hematopoietic and related tissue (C00-C75)",
+                "totalinblock": 60,
+                "notassigned": 60
+            },
+            {
+                "id": 27,
+                "block": "C00-C14",
+                "description": "Malignant neoplasms of lip, oral cavity and pharynx (C00-C14)",
+                "totalinblock": 40,
+                "notassigned": 40
+            },
+            {
+                "id": 28,
+                "block": "C15-C26",
+                "description": "Malignant neoplasms of digestive organs (C15-C26)",
+                "totalinblock": 24,
+                "notassigned": 24
+            },
+            {
+                "id": 29,
+                "block": "C30-C39",
+                "description": "Malignant neoplasms of respiratory and intrathoracic organs (C30-C39)",
+                "totalinblock": 132,
+                "notassigned": 132
+            },
+            {
+                "id": 30,
+                "block": "C40-C41",
+                "description": "Malignant neoplasms of bone and articular cartilage (C40-C41)",
+                "totalinblock": 52,
+                "notassigned": 52
+            },
+            {
+                "id": 31,
+                "block": "C43-C44",
+                "description": "Melanoma and other malignant neoplasms of skin (C43-C44)",
+                "totalinblock": 54,
+                "notassigned": 54
+            },
+            {
+                "id": 32,
+                "block": "C45-C49",
+                "description": "Malignant neoplasms of mesothelial and soft tissue (C45-C49)",
+                "totalinblock": 35,
+                "notassigned": 35
+            },
+            {
+                "id": 33,
+                "block": "C50",
+                "description": "Malignant neoplasms of breast (C50)",
+                "totalinblock": 25,
+                "notassigned": 25
+            },
+            {
+                "id": 34,
+                "block": "C51-C58",
+                "description": "Malignant neoplasms of female genital organs (C51-C58)",
+                "totalinblock": 23,
+                "notassigned": 23
+            },
+            {
+                "id": 35,
+                "block": "C60-C63",
+                "description": "Malignant neoplasms of male genital organs (C60-C63)",
+                "totalinblock": 54,
+                "notassigned": 54
+            },
+            {
+                "id": 36,
+                "block": "C64-C68",
+                "description": "Malignant neoplasms of urinary tract (C64-C68)",
+                "totalinblock": 18,
+                "notassigned": 0
+            },
+            {
+                "id": 37,
+                "block": "C69-C72",
+                "description": "Malignant neoplasms of eye, brain and other parts of central nervous system (C69-C72)",
+                "totalinblock": 23,
+                "notassigned": 23
+            },
+            {
+                "id": 38,
+                "block": "C73-C75",
+                "description": "Malignant neoplasms of thyroid and other endocrine glands (C73-C75)",
+                "totalinblock": 8,
+                "notassigned": 8
+            },
+            {
+                "id": 39,
+                "block": "C7A",
+                "description": "Malignant neuroendocrine tumors (C7A)",
+                "totalinblock": 58,
+                "notassigned": 58
+            },
+            {
+                "id": 40,
+                "block": "C7B",
+                "description": "Secondary neuroendocrine tumors (C7B)",
+                "totalinblock": 480,
+                "notassigned": 480
+            },
+            {
+                "id": 41,
+                "block": "C76-C80",
+                "description": "Malignant neoplasms of ill-defined, other secondary and unspecified sites (C76-C80)",
+                "totalinblock": 102,
+                "notassigned": 102
+            },
+            {
+                "id": 42,
+                "block": "C81-C96",
+                "description": "Malignant neoplasms of lymphoid, hematopoietic and related tissue (C81-C96)",
+                "totalinblock": 239,
+                "notassigned": 239
+            },
+            {
+                "id": 43,
+                "block": "D00-D09",
+                "description": "In situ neoplasms (D00-D09)",
+                "totalinblock": 22,
+                "notassigned": 22
+            },
+            {
+                "id": 44,
+                "block": "D10-D36",
+                "description": "Benign neoplasms, except benign neuroendocrine tumors (D10-D36)",
+                "totalinblock": 103,
+                "notassigned": 103
+            },
+            {
+                "id": 45,
+                "block": "D3A",
+                "description": "Benign neuroendocrine tumors (D3A)",
+                "totalinblock": 14,
+                "notassigned": 14
+            }
+        ],
+        "section": [
+            {
+                "id": 168,
+                "block": "C00",
+                "description": "Malignant neoplasm of lip",
+                "alreadyAssignedTo": [],
+                "totalinblock": 9,
+                "notassigned": 9
+            },
+            {
+                "id": 169,
+                "block": "C01",
+                "description": "Malignant neoplasm of base of tongue",
+                "alreadyAssignedTo": [],
+                "totalinblock": 1,
+                "notassigned": 0
+            },
+            {
+                "id": 170,
+                "block": "C02",
+                "description": "Malignant neoplasm of other and unspecified parts of tongue",
+                "alreadyAssignedTo": [],
+                "subBlock": [
+                    {
+                        "block": "C02.1",
+                        "alreadyAssignedTo": [],
+                        "description": "This group doesn't exist. Only for testing parent without non-grouped",
+                        "idsubblock": 756,
+                        "totalinblock": 7,
+                        "notassigned": 7,
+                        "parentGroupId": 170
+                    }
+                ],
+                "totalinblock": 7,
+                "notassigned": 7
+            },
+            {
+                "id": 171,
+                "block": "C03",
+                "alreadyAssignedTo": [],
+                "description": "Malignant neoplasm of gum",
+                "totalinblock": 3,
+                "notassigned": 3
+            },
+            {
+                "id": 172,
+                "block": "C04",
+                "alreadyAssignedTo": [],
+                "description": "Malignant neoplasm of floor of mouth",
+                "totalinblock": 4,
+                "notassigned": 4
+            },
+            {
+                "id": 173,
+                "block": "C05",
+                "alreadyAssignedTo": [],
+                "description": "Malignant neoplasm of palate",
+                "totalinblock": 5,
+                "notassigned": 5
+            },
+            {
+                "id": 174,
+                "block": "C06",
+                "alreadyAssignedTo": [],
+                "description": "Malignant neoplasm of other and unspecified parts of mouth",
+                "subBlock": [
+                    {
+                        "block": "C06.8",
+                        "alreadyAssignedTo": [],
+                        "description": "Malignant neoplasm of overlapping sites of other and unspecified parts of mouth",
+                        "idsubblock": 756,
+                        "totalinblock": 2,
+                        "notassigned": 2
+                    }
+                ],
+                "totalinblock": 6,
+                "notassigned": 6
+            },
+            {
+                "id": 175,
+                "block": "C07",
+                "alreadyAssignedTo": [],
+                "description": "Malignant neoplasm of parotid gland",
+                "totalinblock": 1,
+                "notassigned": 1
+            },
+            {
+                "id": 176,
+                "block": "C08",
+                "alreadyAssignedTo": [],
+                "description": "Malignant neoplasm of other and unspecified major salivary glands",
+                "totalinblock": 3,
+                "notassigned": 3
+            },
+            {
+                "id": 177,
+                "block": "C09",
+                "alreadyAssignedTo": [],
+                "description": "Malignant neoplasm of tonsil",
+                "totalinblock": 4,
+                "notassigned": 4
+            },
+            {
+                "id": 178,
+                "block": "C10",
+                "alreadyAssignedTo": [],
+                "description": "Malignant neoplasm of oropharynx",
+                "totalinblock": 7,
+                "notassigned": 2
+            },
+            {
+                "id": 179,
+                "block": "C11",
+                "alreadyAssignedTo": [],
+                "description": "Malignant neoplasm of nasopharynx",
+                "totalinblock": 6,
+                "notassigned": 6
+            },
+            {
+                "id": 180,
+                "block": "C12",
+                "alreadyAssignedTo": [],
+                "description": "Malignant neoplasm of pyriform sinus",
+                "totalinblock": 1,
+                "notassigned": 1
+            },
+            {
+                "id": 181,
+                "block": "C13",
+                "alreadyAssignedTo": [],
+                "description": "Malignant neoplasm of hypopharynx",
+                "totalinblock": 5,
+                "notassigned": 5
+            },
+            {
+                "id": 182,
+                "block": "C14",
+                "alreadyAssignedTo": [],
+                "description": "Malignant neoplasm of other and ill-defined sites in the lip, oral cavity and pharynx",
+                "totalinblock": 3,
+                "notassigned": 3
+            }
+        ]
+    },
+    "reviewer": {
+        "chapter": [
+            {
+                "id": 1,
+                "block": "A00-B99",
+                "description": "Certain infectious and parasitic diseases",
+                "totalinblock": 1057,
+                "notassigned": 0
+            },
+            {
+                "id": 2,
+                "block": "C00-D49",
+                "description": "Neoplasms",
+                "totalinblock": 1631,
+                "notassigned": 8
+            },
+            {
+                "id": 3,
+                "block": "D50-D89",
+                "description": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism",
+                "totalinblock": 247,
+                "notassigned": 0
+            },
+            {
+                "id": 4,
+                "block": "E00-E89",
+                "description": "Endocrine, nutritional and metabolic diseases",
+                "totalinblock": 705,
+                "notassigned": 0
+            },
+            {
+                "id": 5,
+                "block": "F01-F99",
+                "description": "Mental, Behavioral and Neurodevelopmental disorders",
+                "totalinblock": 733,
+                "notassigned": 0
+            },
+            {
+                "id": 6,
+                "block": "G00-G99",
+                "description": "Diseases of the nervous system",
+                "totalinblock": 613,
+                "notassigned": 0
+            },
+            {
+                "id": 7,
+                "block": "H00-H59",
+                "description": "Diseases of the eye and adnexa",
+                "totalinblock": 2321,
+                "notassigned": 0
+            },
+            {
+                "id": 8,
+                "block": "H60-H95",
+                "description": "Diseases of the ear and mastoid process",
+                "totalinblock": 656,
+                "notassigned": 20
+            },
+            {
+                "id": 9,
+                "block": "I00-I99",
+                "description": "Diseases of the circulatory system",
+                "totalinblock": 1329,
+                "notassigned": 0
+            },
+            {
+                "id": 10,
+                "block": "J00-J99",
+                "description": "Diseases of the respiratory system",
+                "totalinblock": 341,
+                "notassigned": 0
+            },
+            {
+                "id": 11,
+                "block": "K00-K95",
+                "description": "Diseases of the digestive system",
+                "totalinblock": 774,
+                "notassigned": 0
+            },
+            {
+                "id": 12,
+                "block": "L00-L99",
+                "description": "Diseases of the skin and subcutaneous tissue",
+                "totalinblock": 774,
+                "notassigned": 0
+            },
+            {
+                "id": 13,
+                "block": "M00-M99",
+                "description": "Diseases of the musculoskeletal system and connective tissue",
+                "totalinblock": 5301,
+                "notassigned": 3
+            },
+            {
+                "id": 14,
+                "block": "N00-N99",
+                "description": "Diseases of the genitourinary system",
+                "totalinblock": 640,
+                "notassigned": 6
+            },
+            {
+                "id": 15,
+                "block": "O00-O9A",
+                "description": "Pregnancy, childbirth and the puerperium",
+                "totalinblock": 1320,
+                "notassigned": 0
+            },
+            {
+                "id": 16,
+                "block": "P00-P96",
+                "description": "Certain conditions originating in the perinatal period",
+                "totalinblock": 419,
+                "notassigned": 0
+            },
+            {
+                "id": 17,
+                "block": "Q00-Q99",
+                "description": "Congenital malformations, deformations and chromosomal abnormalities",
+                "totalinblock": 808,
+                "notassigned": 0
+            },
+            {
+                "id": 18,
+                "block": "R00-R99",
+                "description": "Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified",
+                "totalinblock": 633,
+                "notassigned": 0
+            },
+            {
+                "id": 19,
+                "block": "S00-T88",
+                "description": "Injury, poisoning and certain other consequences of external causes",
+                "totalinblock": 9955,
+                "notassigned": 0
+            },
+            {
+                "id": 20,
+                "block": "V00-Y99",
+                "description": "External causes of morbidity",
+                "totalinblock": 2590,
+                "notassigned": 0
+            },
+            {
+                "id": 21,
+                "block": "Z00-Z99",
+                "description": "Factors influencing health status and contact with health services",
+                "totalinblock": 1215,
+                "notassigned": 0
+            }
+        ]
+    },
+    "section": [
+        {
+            "id": 1,
+            "block": "A00",
+            "alreadyAssignedTo": [],
+            "description": "Cholera",
+            "totalinblock": 3,
+            "notassigned": 3
+        },
+        {
+            "id": 2,
+            "block": "A01",
+            "alreadyAssignedTo": [],
+            "description": "Typhoid and paratyphoid fevers",
+            "subBlock": [
+                {
+                    "block": "A01.0",
+                    "alreadyAssignedTo": [],
+                    "description": "Typhoid fever",
+                    "idsubblock": 4,
+                    "totalinblock": 7,
+                    "notassigned": 7
+                }
+            ],
+            "totalinblock": 11,
+            "notassigned": 11
+        },
+        {
+            "id": 3,
+            "block": "A02",
+            "alreadyAssignedTo": [],
+            "description": "Other salmonella infections",
+            "subBlock": [
+                {
+                    "block": "A02.2",
+                    "alreadyAssignedTo": [],
+                    "description": "Localized salmonella infections",
+                    "idsubblock": 11,
+                    "totalinblock": 7,
+                    "notassigned": 7
+                }
+            ],
+            "totalinblock": 11,
+            "notassigned": 11
+        },
+        {
+            "id": 4,
+            "block": "A03",
+            "alreadyAssignedTo": [],
+            "description": "Shigellosis",
+            "totalinblock": 6,
+            "notassigned": 6
+        },
+        {
+            "id": 5,
+            "block": "A04",
+            "alreadyAssignedTo": [],
+            "description": "Other bacterial intestinal infections",
+            "totalinblock": 10,
+            "notassigned": 10
+        },
+        {
+            "id": 6,
+            "block": "A05",
+            "alreadyAssignedTo": [],
+            "description": "Other bacterial foodborne intoxications, not elsewhere classified",
+            "totalinblock": 8,
+            "notassigned": 8
+        },
+        {
+            "id": 7,
+            "block": "A06",
+            "alreadyAssignedTo": [],
+            "description": "Amebiasis",
+            "subBlock": [
+                {
+                    "block": "A06.8",
+                    "alreadyAssignedTo": [],
+                    "description": "Amebic infection of other sites",
+                    "idsubblock": 46,
+                    "totalinblock": 3,
+                    "notassigned": 3
+                }
+            ],
+            "totalinblock": 12,
+            "notassigned": 12
+        },
+        {
+            "id": 8,
+            "block": "A07",
+            "alreadyAssignedTo": [],
+            "description": "Other protozoal intestinal diseases",
+            "totalinblock": 7,
+            "notassigned": 7
+        },
+        {
+            "id": 9,
+            "block": "A08",
+            "alreadyAssignedTo": [],
+            "description": "Viral and other specified intestinal infections",
+            "subBlock": [
+                {
+                    "block": "A08.1",
+                    "alreadyAssignedTo": [],
+                    "description": "Acute gastroenteropathy due to Norwalk agent and other small round viruses",
+                    "idsubblock": 56,
+                    "totalinblock": 2,
+                    "notassigned": 2
+                },
+                {
+                    "block": "A08.3",
+                    "alreadyAssignedTo": [],
+                    "description": "Other viral enteritis",
+                    "idsubblock": 58,
+                    "totalinblock": 3,
+                    "notassigned": 3
+                }
+            ],
+            "totalinblock": 9,
+            "notassigned": 9
+        },
+        {
+            "id": 10,
+            "block": "A09",
+            "alreadyAssignedTo": [],
+            "description": "Infectious gastroenteritis and colitis, unspecified",
+            "totalinblock": 1,
+            "notassigned": 1
+        }
+    ],
+    "section-rows": [
+        {
+            "id": 1,
+            "block": "A00",
+            "alreadyAssignedTo": [],
+            "description": "Cholera",
+            "totalinblock": 3,
+            "notassigned": 0
+        },
+        {
+            "id": 2,
+            "block": "A01",
+            "alreadyAssignedTo": [1],
+            "description": "Typhoid and paratyphoid fevers",
+            "subBlock": [
+                {
+                    "parentGroupId": 2,
+                    "block": "A01",
+                    "alreadyAssignedTo": [],
+                    "description": "[Non-grouped] Typhoid and paratyphoid fevers",
+                    "totalinblock": 4,
+                    "notassigned": 0,
+                    "notGrouped": true
+                },
+                {
+                    "block": "A01.0",
+                    "alreadyAssignedTo": [],
+                    "description": "Typhoid fever",
+                    "idsubblock": 4,
+                    "totalinblock": 7,
+                    "notassigned": 7,
+                    "parentGroupId": 2
+                }
+            ],
+            "totalinblock": 11,
+            "notassigned": 11
+        },
+        {
+            "id": 3,
+            "block": "A02",
+            "alreadyAssignedTo": [],
+            "description": "Other salmonella infections",
+            "subBlock": [
+                {
+                    "parentGroupId": 3,
+                    "block": "A02",
+                    "alreadyAssignedTo": [2],
+                    "description": "[Non-grouped] Other salmonella infections",
+                    "totalinblock": 4,
+                    "notassigned": 4,
+                    "notGrouped": true
+                },
+                {
+                    "block": "A02.2",
+                    "alreadyAssignedTo": [],
+                    "description": "Localized salmonella infections",
+                    "idsubblock": 11,
+                    "totalinblock": 7,
+                    "notassigned": 7,
+                    "parentGroupId": 3
+                }
+            ],
+            "totalinblock": 11,
+            "notassigned": 11
+        },
+        {
+            "id": 4,
+            "block": "A03",
+            "alreadyAssignedTo": [
+                1,
+                3
+            ],
+            "description": "Shigellosis",
+            "totalinblock": 6,
+            "notassigned": 6
+        },
+        {
+            "id": 5,
+            "block": "A04",
+            "alreadyAssignedTo": [],
+            "description": "Other bacterial intestinal infections",
+            "totalinblock": 10,
+            "notassigned": 10
+        },
+        {
+            "id": 6,
+            "block": "A05",
+            "alreadyAssignedTo": [],
+            "description": "Other bacterial foodborne intoxications, not elsewhere classified",
+            "totalinblock": 8,
+            "notassigned": 8
+        },
+        {
+            "id": 7,
+            "block": "A06",
+            "alreadyAssignedTo": [],
+            "description": "Amebiasis",
+            "subBlock": [
+                {
+                    "parentGroupId": 7,
+                    "block": "A06",
+                    "description": "[Non-grouped] Amebiasis",
+                    "alreadyAssignedTo": [],
+                    "totalinblock": 9,
+                    "notassigned": 9,
+                    "notGrouped": true
+                },
+                {
+                    "block": "A06.8",
+                    "description": "Amebic infection of other sites",
+                    "alreadyAssignedTo": [],
+                    "idsubblock": 46,
+                    "totalinblock": 3,
+                    "notassigned": 3,
+                    "parentGroupId": 7
+                }
+            ],
+            "totalinblock": 12,
+            "notassigned": 12
+        },
+        {
+            "id": 8,
+            "block": "A07",
+            "alreadyAssignedTo": [],
+            "description": "Other protozoal intestinal diseases",
+            "totalinblock": 7,
+            "notassigned": 7
+        },
+        {
+            "id": 9,
+            "block": "A08",
+            "alreadyAssignedTo": [],
+            "description": "Viral and other specified intestinal infections",
+            "subBlock": [
+                {
+                    "parentGroupId": 9,
+                    "block": "A08",
+                    "alreadyAssignedTo": [],
+                    "description": "[Non-grouped] Viral and other specified intestinal infections",
+                    "totalinblock": 4,
+                    "notassigned": 4,
+                    "notGrouped": true
+                },
+                {
+                    "block": "A08.1",
+                    "alreadyAssignedTo": [],
+                    "description": "Acute gastroenteropathy due to Norwalk agent and other small round viruses",
+                    "idsubblock": 56,
+                    "totalinblock": 2,
+                    "notassigned": 2,
+                    "parentGroupId": 9
+                },
+                {
+                    "block": "A08.3",
+                    "alreadyAssignedTo": [],
+                    "description": "Other viral enteritis",
+                    "idsubblock": 58,
+                    "totalinblock": 3,
+                    "notassigned": 3,
+                    "parentGroupId": 9
+                }
+            ],
+            "totalinblock": 9,
+            "notassigned": 9
+        },
+        {
+            "id": 10,
+            "block": "A09",
+            "alreadyAssignedTo": [],
+            "description": "Infectious gastroenteritis and colitis, unspecified",
+            "totalinblock": 1,
+            "notassigned": 1
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+<div class="row no-gutters">
+  <h4 *ngIf="role" class="role mt-2"><span *ngIf="role === 'collector'">Data&nbsp;</span>{{role | titleCase}}</h4>
+  <!--<div class="triangle"></div>-->
+  <ol *ngIf="role" class="col breadcrumb mt-2 col-xs">
+    <li *ngIf="chapter" class="breadcrumb-item">
+      <a href="#" (click)="onNavigate('chapter', $event)">{{chapterTitle}}</a>
+    </li>
+    <li *ngIf="head" class="breadcrumb-item active">
+      <a href="#" (click)="onNavigate('head', $event)" placement="bottom" [ngbTooltip]="headTooltip">{{head}}</a>
+    </li>
+    <li class="breadcrumb-item">{{current}}</li>
+  </ol>
+</div>

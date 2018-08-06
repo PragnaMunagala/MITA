@@ -1,0 +1,95 @@
+<div>
+  <div class="title" [class.loading]="loadingCurrentData">
+    <h1>Analysis:</h1>
+    <h2><span *ngIf="role === 'collector'">Data </span>{{role | titleCase }}</h2>
+    <div *ngIf="loadingCurrentData" class="cssload-loader"></div>
+  </div>
+  <div id="no-task" class="bg-info text-white rounded mb-3 p-3" *ngIf="!loadingCurrentData && currentData.length === 0">
+    <h3 class="text-center mt-3">No Current Tasks for {{role | titleCase}} yet.</h3>
+  </div>
+  <table *ngIf="!loadingCurrentData && currentData.length > 0" class="current table table-hover">
+    <thead>
+      <tr>
+        <th colspan="4"><h3>Current</h3></th>
+      </tr>
+      <tr>
+        <th>Assigned to</th>
+        <th *ngIf="role === 'collector'"></th>
+        <th>Illnesses</th>
+        <th>Assigned Date</th>
+        <th>Complete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of currentData; let idx = index" (click)="showHistoryForRow(row, $event)" class="row-current">
+        <td>{{row.name}}</td>
+        <td *ngIf="role === 'collector'"><button (click)="resetTask(idx)" class="btn btn-sm btn-primary">Reset</button></td>
+        <td>{{row.totalNumberOfIllnesses}}</td>
+        <td>{{row.dateOfLastAssignedTask | date}}</td>
+        <td>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar"
+                [class.short]="row.percentageCompleted < 5"
+                [ngStyle]="{width: row.percentageCompleted + '%'}"
+                [attr.aria-valuenow]="row.percentageCompleted"
+                aria-valuemin="0" aria-valuemax="100">
+                {{row.percentageCompleted}}%
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngIf="!loadingCurrentData" class="history">
+    <table class="table mt-3">
+      <thead>
+        <tr>
+          <th [class.no-border]="!historyItems || historyItems.length === 0">
+            <h3 class="d-inline-block mr-3">History</h3>
+            <div ngbDropdown class="d-inline-block">
+              <button class="btn btn-secondary dropdown-toggle" id="userHistoryDropdown" ngbDropdownToggle>
+                {{userHistorySelected ? userHistorySelected.text : "Select " + (role | titleCase)}}
+              </button>
+              <div class="dropdown-menu" aria-labelledby="userHistoryDropdown">
+                <button type="button" *ngFor="let user of users" id="history-selector" class="dropdown-item" (click)="showHistory(user)">
+                  <span *ngIf="!user.rating">{{user.text}}</span>
+                  <div *ngIf="user.rating" class="user-rating-item">
+                    {{user.text}}<span class="badge badge-default ml-1">{{user.rating}}</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </th>
+        </tr>
+        <tr *ngIf="historyItems && historyItems.length > 0">
+          <th>Name</th>
+          <th *ngIf="role === 'collector'">Assigned Date</th>
+          <th *ngIf="role === 'reviewer'">Date Sub (started)</th>
+          <th *ngIf="role === 'collector'">Complete Date</th>
+          <th *ngIf="role === 'reviewer'">Rev Date (completed)</th>
+          <th>Assigned</th>
+          <th *ngIf="role === 'collector'">Completed</th>
+          <th *ngIf="role === 'collector'">Rejected</th>
+          <th *ngIf="role === 'collector'">Quality</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngIf="!loadingHistory && userHistorySelected && (!historyItems || historyItems.length === 0)">
+          <td>No history items for {{userHistorySelected.text}} yet</td>
+        </tr>
+        <tr *ngIf="loadingHistory">
+          <div class="cssload-loader mb-3"></div>
+        </tr>
+        <tr *ngFor="let row of historyItems" class="history-item">
+          <td>{{userHistorySelected.text}}</td>
+          <td>{{row.dateStart | date}}</td>
+          <td>{{row.dateCompleted | date}}</td>
+          <td>{{row.totalOriginalAssigned}}</td>
+          <td *ngIf="role === 'collector'">{{row.totalOriginalAssigned - row.totalSkipped}}</td>
+          <td *ngIf="role === 'collector'">{{row.totalRejected}}</td>
+          <td *ngIf="role === 'collector'">{{row.qualityScore}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

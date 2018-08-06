@@ -1,0 +1,633 @@
+{
+  "email": {
+    "user_id": 16,
+    "role_id": 3,
+    "role_name": "Administrator",
+    "email": "j.jimenez@gmail.com",
+    "name": "Juan",
+    "surname": "Jimenez",
+    "created_on": 1494590436421
+  },
+  "allTupleRole": [
+    [
+      {
+        "userId": 1,
+        "roleId": 1,
+        "roleName": "collector",
+        "name": "Govinda",
+        "surname": "Doe",
+        "email": "greddy5680@gmail.com",
+        "createdOn": "2016-12-26T10:51:01.125Z",
+        "rating": 0
+      },
+      {
+        "userId": 2,
+        "roleId": 1,
+        "roleName": "collector",
+        "name": "Vijetha",
+        "surname": "Aithal",
+        "email": "vijetha@techmileage.com",
+        "createdOn": "2016-12-26T10:51:01.386Z",
+        "rating": 0
+      },
+      {
+        "userId": 3,
+        "roleId": 1,
+        "roleName": "collector",
+        "name": "Juan",
+        "surname": "Jimenez",
+        "email": "j.jimenez.anca@gmail.com",
+        "createdOn": "2016-12-26T10:51:01.589Z",
+        "rating": 0
+      },
+      {
+        "userId": 4,
+        "roleId": 1,
+        "roleName": "collector",
+        "name": "Jim",
+        "surname": "Shelby",
+        "email": "jim-shelby@gorvw.net",
+        "createdOn": "2016-12-26T10:51:01.897Z",
+        "rating": 0
+      },
+      {
+        "userId": 8,
+        "roleId": 1,
+        "roleName": "collector",
+        "name": "James",
+        "surname": "Bates",
+        "email": "jamessbates@gmail.com",
+        "createdOn": "2017-02-03T16:14:53.383Z",
+        "rating": 0
+      },
+      {
+        "userId": 10,
+        "roleId": 1,
+        "roleName": "collector",
+        "name": "Tom",
+        "surname": "Landon",
+        "email": "tlandonmica@gmail.com",
+        "createdOn": "2017-03-08T16:59:11.712Z",
+        "rating": 0
+      },
+      {
+        "userId": 11,
+        "roleId": 1,
+        "roleName": "collector",
+        "name": "Abe",
+        "surname": "Sayegh",
+        "email": "abrahamsayegh@gmail.com",
+        "createdOn": "2017-05-08T09:41:20.520Z",
+        "rating": 0
+      },
+      {
+        "userId": 12,
+        "roleId": 1,
+        "roleName": "collector",
+        "name": "Ryan",
+        "surname": "Huffman",
+        "email": "huffmar@gmail.com",
+        "createdOn": "2017-05-08T09:41:07.252Z",
+        "rating": 0
+      },
+      {
+        "userId": 13,
+        "roleId": 1,
+        "roleName": "collector",
+        "name": "Terry",
+        "surname": "McGovern",
+        "email": "terry.mcgovern11@gmail.com",
+        "createdOn": "2017-05-08T17:47:37.618Z",
+        "rating": 0
+      },
+      {
+        "userId": 14,
+        "roleId": 1,
+        "roleName": "collector",
+        "name": "Alex",
+        "surname": "Carrie",
+        "email": "alexcarriemica@gmail.com",
+        "createdOn": "2017-05-08T17:48:02.764Z",
+        "rating": 0
+      },
+      {
+        "userId": 48,
+        "roleId": 1,
+        "roleName": "collector",
+        "name": "Test",
+        "surname": "Test",
+        "email": "test@test.com",
+        "createdOn": "2017-05-19T16:53:25.487Z",
+        "rating": 0
+      },
+      {
+        "userId": 56,
+        "roleId": 1,
+        "roleName": "collector",
+        "name": "Ravi",
+        "surname": "TM",
+        "email": "ravi@advinow.com",
+        "createdOn": "2017-05-24T07:26:12.036Z",
+        "rating": 0
+      },
+      {
+        "userId": 59,
+        "roleId": 1,
+        "roleName": "collector",
+        "name": "Kris Perry",
+        "surname": "shelbymita@gmail.com",
+        "email": "kris.perry@kpneuralworks.com",
+        "createdOn": "2017-05-25T14:52:57.686Z",
+        "rating": 0
+      },
+      {
+        "userId": 60,
+        "roleId": 1,
+        "roleName": "collector",
+        "name": "Yaron",
+        "surname": "Yaron",
+        "email": "yaron@gmail.com",
+        "createdOn": "2017-05-30T14:57:47.294Z",
+        "rating": 0
+      }
+    ],
+    [
+      {
+        "userId": 5,
+        "roleId": 2,
+        "roleName": "reviewer",
+        "name": "Laura",
+        "surname": "Fowler",
+        "email": "laurafowlermica@gmail.com",
+        "createdOn": "2016-12-26T10:51:02.204Z",
+        "rating": 0
+      },
+      {
+        "userId": 6,
+        "roleId": 2,
+        "roleName": "reviewer",
+        "name": "Jim",
+        "surname": "Approver",
+        "email": "shelbyzgow@gmail.com",
+        "createdOn": "2016-12-26T10:51:02.511Z",
+        "rating": 0
+      },
+      {
+        "userId": 9,
+        "roleId": 2,
+        "roleName": "reviewer",
+        "name": "Abe",
+        "surname": "Sayegh",
+        "email": "drabe61@me.com",
+        "createdOn": "2017-02-03T16:16:44.058Z",
+        "rating": 0
+      },
+      {
+        "userId": 15,
+        "roleId": 2,
+        "roleName": "reviewer",
+        "name": "Sam",
+        "surname": "Smart",
+        "email": "samsmartmica@gmail.com",
+        "createdOn": "2017-05-08T17:48:24.525Z",
+        "rating": 0
+      }
+    ],
+    [
+      {
+        "userId": 16,
+        "roleId": 3,
+        "roleName": "administrator",
+        "name": "Juan",
+        "surname": "Jimenez",
+        "email": "j.jimenez@gmail.com",
+        "createdOn": "2017-05-12T12:00:36.421Z",
+        "rating": 0
+      },
+      {
+        "userId": 17,
+        "roleId": 3,
+        "roleName": "administrator",
+        "name": "Jim",
+        "surname": "Shelby",
+        "email": "shelbymita@gmail.com",
+        "createdOn": "2017-05-12T12:01:29.501Z",
+        "rating": 0
+      },
+      {
+        "userId": 18,
+        "roleId": 3,
+        "roleName": "administrator",
+        "name": "David",
+        "surname": "Jimenez",
+        "email": "dvdancca@gmail.com",
+        "createdOn": "2017-05-12T12:02:46.221Z",
+        "rating": 0
+      },
+      {
+        "userId": 58,
+        "roleId": 3,
+        "roleName": "administrator",
+        "name": "Ravi",
+        "surname": "TM",
+        "email": "raviadmin@advinow.com",
+        "createdOn": "2017-05-24T07:35:36.264Z",
+        "rating": 0
+      }
+    ]
+  ],
+  "all": [
+    {
+      "userId": 3,
+      "name": "Juan",
+      "surname": "Jimenez",
+      "email": "j.jimenez.anca@gmail.com",
+      "rating": 0,
+      "created_on": 1482749461589,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      }
+    },
+    {
+      "userId": 6,
+      "name": "Jim",
+      "surname": "Approver",
+      "email": "shelbyzgow@gmail.com",
+      "rating": 0,
+      "created_on": 1482749462511,
+      "role": {
+        "roleId": 2,
+        "name": "Reviewer",
+        "description": "Person reviewing block jobs"
+      }
+    },
+    {
+      "userId": 1,
+      "name": "Govinda",
+      "surname": "Doe",
+      "email": "greddy5680@gmail.com",
+      "rating": 0,
+      "created_on": 1482749461125,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      }
+    },
+    {
+      "userId": 2,
+      "name": "Vijetha",
+      "surname": "Aithal",
+      "email": "vijetha@techmileage.com",
+      "rating": 0,
+      "created_on": 1482749461386,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      }
+    },
+    {
+      "userId": 4,
+      "name": "Jim",
+      "surname": "Shelby",
+      "email": "jim-shelby@gorvw.net",
+      "rating": 0,
+      "created_on": 1482749461897,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      }
+    },
+    {
+      "userId": 5,
+      "name": "Laura",
+      "surname": "Fowler",
+      "email": "laurafowlermica@gmail.com",
+      "rating": 0,
+      "created_on": 1482749462204,
+      "role": {
+        "roleId": 2,
+        "name": "Reviewer",
+        "description": "Person reviewing block jobs"
+      }
+    },
+    {
+      "userId": 11,
+      "name": "Abe",
+      "surname": "Sayegh",
+      "email": "abrahamsayegh@gmail.com",
+      "rating": 0,
+      "created_on": 1494236480520,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      }
+    },
+    {
+      "userId": 13,
+      "name": "Terry",
+      "surname": "McGovern",
+      "email": "terry.mcgovern11@gmail.com",
+      "rating": 0,
+      "created_on": 1494265657618,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      }
+    },
+    {
+      "userId": 15,
+      "name": "Sam",
+      "surname": "Smart",
+      "email": "samsmartmica@gmail.com",
+      "rating": 0,
+      "created_on": 1494265704525,
+      "role": {
+        "roleId": 2,
+        "name": "Reviewer",
+        "description": "Person reviewing block jobs"
+      }
+    },
+    {
+      "userId": 8,
+      "name": "James",
+      "surname": "Bates",
+      "email": "jamessbates@gmail.com",
+      "rating": 0,
+      "created_on": 1486138493383,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      }
+    },
+    {
+      "userId": 10,
+      "name": "Tom",
+      "surname": "Landon",
+      "email": "tlandonmica@gmail.com",
+      "rating": 0,
+      "created_on": 1488992351712,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      }
+    },
+    {
+      "userId": 14,
+      "name": "Alex",
+      "surname": "Carrie",
+      "email": "alexcarriemica@gmail.com",
+      "rating": 0,
+      "created_on": 1494265682764,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      }
+    },
+    {
+      "userId": 9,
+      "name": "Abe",
+      "surname": "Sayegh",
+      "email": "drabe61@me.com",
+      "rating": 0,
+      "created_on": 1486138604058,
+      "role": {
+        "roleId": 2,
+        "name": "Reviewer",
+        "description": "Person reviewing block jobs"
+      }
+    },
+    {
+      "userId": 12,
+      "name": "Ryan",
+      "surname": "Huffman",
+      "email": "huffmar@gmail.com",
+      "rating": 0,
+      "created_on": 1494236467252,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      }
+    },
+    {
+      "userId": 16,
+      "name": "Juan",
+      "surname": "Jimenez",
+      "email": "j.jimenez@gmail.com",
+      "rating": 0,
+      "created_on": 1494590436421,
+      "role": {
+        "roleId": 3,
+        "name": "Administrator",
+        "description": "Person assigning block jobs. Admin, of MITA system"
+      }
+    },
+    {
+      "userId": 17,
+      "name": "Jim",
+      "surname": "Shelby",
+      "email": "shelbymita@gmail.com",
+      "rating": 0,
+      "created_on": 1494590489501,
+      "role": {
+        "roleId": 3,
+        "name": "Administrator",
+        "description": "Person assigning block jobs. Admin, of MITA system"
+      }
+    },
+    {
+      "userId": 18,
+      "name": "David",
+      "surname": "Jimenez",
+      "email": "dvdancca@gmail.com",
+      "rating": 0,
+      "created_on": 1494590566221,
+      "role": {
+        "roleId": 3,
+        "name": "Administrator",
+        "description": "Person assigning block jobs. Admin, of MITA system"
+      }
+    },
+    {
+      "userId": 48,
+      "name": "Test",
+      "surname": "Test",
+      "email": "test@test.com",
+      "rating": 0,
+      "created_on": 1495212805487,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      }
+    },
+    {
+      "userId": 56,
+      "name": "Ravi",
+      "surname": "TM",
+      "email": "ravi@advinow.com",
+      "rating": 0,
+      "created_on": 1495610772036,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      }
+    },
+    {
+      "userId": 58,
+      "name": "Ravi",
+      "surname": "TM",
+      "email": "raviadmin@advinow.com",
+      "rating": 0,
+      "created_on": 1495611336264,
+      "role": {
+        "roleId": 3,
+        "name": "Administrator",
+        "description": "Person assigning block jobs. Admin, of MITA system"
+      }
+    },
+    {
+      "userId": 59,
+      "name": "Kris Perry",
+      "surname": "shelbymita@gmail.com",
+      "email": "kris.perry@kpneuralworks.com",
+      "rating": 0,
+      "created_on": 1495723977686,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      }
+    }
+  ],
+  "collector": [
+    {
+      "userId": 1,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      },
+      "name": "John",
+      "surname": "Doe"
+    },
+    {
+      "userId": 2,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      },
+      "name": "Mary",
+      "surname": "Smith"
+    },
+    {
+      "userId": 3,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      },
+      "name": "Juan",
+      "surname": "Jimenez"
+    },
+    {
+      "userId": 4,
+      "role": {
+        "roleId": 1,
+        "name": "Collector",
+        "description": "Person completing illness form"
+      },
+      "name": "Jim",
+      "surname": "Shelby"
+    }
+  ],
+  "reviewer": [
+    {
+      "userId": 5,
+      "role": {
+        "roleId": 2,
+        "name": "Reviewer",
+        "description": "Person reviewing block jobs"
+      },
+      "name": "Laura",
+      "surname": "Fowler"
+    },
+    {
+      "userId": 6,
+      "role": {
+        "roleId": 2,
+        "name": "Reviewer",
+        "description": "Person reviewing block jobs"
+      },
+      "name": "Rod",
+      "surname": "Nelson"
+    }
+  ],
+  "collector-selectable": [
+    {
+      "id": 1,
+      "text": "John Doe"
+    },
+    {
+      "id": 2,
+      "text": "Mary Smith"
+    },
+    {
+      "id": 3,
+      "text": "Juan Jimenez"
+    },
+    {
+      "id": 4,
+      "text": "Jim Shelby"
+    }
+  ],
+  "rating": [
+    {
+      "userId": 1,
+      "roleId": 1,
+      "name": "John",
+      "surname": "Doe",
+      "rating": 67
+    },
+    {
+      "userId": 2,
+      "roleId": 1,
+      "name": "Mary",
+      "surname": "Smith",
+      "rating": 100
+    },
+    {
+      "userId": 3,
+      "roleId": 1,
+      "name": "Juan",
+      "surname": "Jimenez",
+      "rating": 100
+    },
+    {
+      "userId": 4,
+      "roleId": 1,
+      "name": "Jim",
+      "surname": "Shelby",
+      "rating": 100
+    },
+    {
+      "userId": 5,
+      "roleId": 1,
+      "name": "Zero",
+      "surname": "Last",
+      "rating": 100
+    }
+  ]
+}

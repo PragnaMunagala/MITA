@@ -1,0 +1,411 @@
+{
+  "current": {
+    "collectors": [
+      {
+        "taskId": 1,
+        "name": "John Doe",
+        "userId": 1,
+        "totalNumberOfIllnesses": 12,
+        "dateOfLastAssignedTask": 1484611200000,
+        "percentageCompleted": 0
+      },
+      {
+        "taskId": 2,
+        "name": "Mary Smith",
+        "userId": 2,
+        "totalNumberOfIllnesses": 78,
+        "dateOfLastAssignedTask": 1484611200000,
+        "percentageCompleted": 7
+      },
+      {
+        "taskId": 3,
+        "name": "Mary Smith",
+        "userId": 2,
+        "totalNumberOfIllnesses": 6,
+        "dateOfLastAssignedTask": 1484697600000,
+        "percentageCompleted": 33
+      },
+      {
+        "taskId": 4,
+        "name": "Mary Smith",
+        "userId": 2,
+        "totalNumberOfIllnesses": 7,
+        "dateOfLastAssignedTask": 1484697600000,
+        "percentageCompleted": 14
+      },
+      {
+        "taskId": 5,
+        "name": "Mary Smith",
+        "userId": 2,
+        "totalNumberOfIllnesses": 5,
+        "dateOfLastAssignedTask": 1484784000000,
+        "percentageCompleted": 40
+      },
+      {
+        "taskId": 6,
+        "name": "Juan Jimenez",
+        "userId": 3,
+        "totalNumberOfIllnesses": 12,
+        "dateOfLastAssignedTask": 1484611200000,
+        "percentageCompleted": 0
+      },
+      {
+        "taskId": 7,
+        "name": "Jim Shelby",
+        "userId": 4,
+        "totalNumberOfIllnesses": 2,
+        "dateOfLastAssignedTask": 1484611200000,
+        "percentageCompleted": 50
+      },
+      {
+        "taskId": 8,
+        "name": "Jim Shelby",
+        "userId": 4,
+        "totalNumberOfIllnesses": 16,
+        "dateOfLastAssignedTask": 1484611200000,
+        "percentageCompleted": 0
+      }
+    ]
+  },
+  "current-reviewer": {
+    "reviewers": [
+      {
+        "name": "Rod Nelson",
+        "userId": 6,
+        "totalNumberOfIllnesses": 1,
+        "dateOfLastAssignedTask": 1484870400000,
+        "percentageCompleted": 0
+      }
+    ]
+  },
+  "history": {
+    "allTask": [
+      {
+        "dateStart": 1484697600000,
+        "dateCompleted": 1484697600000,
+        "totalOriginalAssigned": 2
+      },
+      {
+        "dateStart": 1484697600000,
+        "dateCompleted": 1484697600000,
+        "totalOriginalAssigned": 1
+      },
+      {
+        "dateStart": 1484611200000,
+        "dateCompleted": 1484611200000,
+        "totalOriginalAssigned": 6
+      }
+    ]
+  },
+  "taskList": {
+    "1": {
+      "taskList": [
+        {
+          "totalSkipped": 0,
+          "totalRejected": 0,
+          "user": {
+            "email": "greddy5680@gmail.com",
+            "created_on": 1502122590431,
+            "rating": 0.0,
+            "userId": 1,
+            "role": {
+              "roleId": 1,
+              "description": "Person completing illness form",
+              "name": "Collector"
+            },
+            "surname": "Reddy",
+            "name": "Govinda"
+          },
+          "idTask": 396,
+          "originalCount": 11,
+          "dateAssigned": 1502056800000,
+          "dateCompleted": null,
+          "createdOn": 1502135129552,
+          "updatedOn": null
+        },
+        {
+          "totalSkipped": 0,
+          "totalRejected": 0,
+          "user": {
+            "email": "greddy5680@gmail.com",
+            "created_on": 1502122590431,
+            "rating": 0.0,
+            "userId": 1,
+            "role": {
+              "roleId": 1,
+              "description": "Person completing illness form",
+              "name": "Collector"
+            },
+            "surname": "Reddy",
+            "name": "Govinda"
+          },
+          "idTask": 396,
+          "originalCount": 11,
+          "dateAssigned": 1502056800000,
+          "dateCompleted": null,
+          "createdOn": 1502135129552,
+          "updatedOn": null
+        },
+        {
+          "totalSkipped": 0,
+          "totalRejected": 0,
+          "user": {
+            "email": "greddy5680@gmail.com",
+            "created_on": 1502122590431,
+            "rating": 0.0,
+            "userId": 1,
+            "role": {
+              "roleId": 1,
+              "description": "Person completing illness form",
+              "name": "Collector"
+            },
+            "surname": "Reddy",
+            "name": "Govinda"
+          },
+          "idTask": 396,
+          "originalCount": 11,
+          "dateAssigned": 1502056800000,
+          "dateCompleted": null,
+          "createdOn": 1502135129552,
+          "updatedOn": null
+        },
+        {
+          "totalSkipped": 0,
+          "totalRejected": 0,
+          "user": {
+            "email": "greddy5680@gmail.com",
+            "created_on": 1502122590431,
+            "rating": 0.0,
+            "userId": 1,
+            "role": {
+              "roleId": 1,
+              "description": "Person completing illness form",
+              "name": "Collector"
+            },
+            "surname": "Reddy",
+            "name": "Govinda"
+          },
+          "idTask": 396,
+          "originalCount": 11,
+          "dateAssigned": 1502056800000,
+          "dateCompleted": null,
+          "createdOn": 1502135129552,
+          "updatedOn": null
+        },
+        {
+          "totalSkipped": 0,
+          "totalRejected": 0,
+          "user": {
+            "email": "greddy5680@gmail.com",
+            "created_on": 1502122590431,
+            "rating": 0.0,
+            "userId": 1,
+            "role": {
+              "roleId": 1,
+              "description": "Person completing illness form",
+              "name": "Collector"
+            },
+            "surname": "Reddy",
+            "name": "Govinda"
+          },
+          "idTask": 396,
+          "originalCount": 11,
+          "dateAssigned": 1502056800000,
+          "dateCompleted": null,
+          "createdOn": 1502135129552,
+          "updatedOn": null
+        },
+        {
+          "totalSkipped": 0,
+          "totalRejected": 0,
+          "user": {
+            "email": "greddy5680@gmail.com",
+            "created_on": 1502122590431,
+            "rating": 0.0,
+            "userId": 1,
+            "role": {
+              "roleId": 1,
+              "description": "Person completing illness form",
+              "name": "Collector"
+            },
+            "surname": "Reddy",
+            "name": "Govinda"
+          },
+          "idTask": 396,
+          "originalCount": 11,
+          "dateAssigned": 1502056800000,
+          "dateCompleted": null,
+          "createdOn": 1502135129552,
+          "updatedOn": null
+        },
+        {
+          "totalSkipped": 0,
+          "totalRejected": 0,
+          "user": {
+            "email": "greddy5680@gmail.com",
+            "created_on": 1502122590431,
+            "rating": 0.0,
+            "userId": 1,
+            "role": {
+              "roleId": 1,
+              "description": "Person completing illness form",
+              "name": "Collector"
+            },
+            "surname": "Reddy",
+            "name": "Govinda"
+          },
+          "idTask": 396,
+          "originalCount": 11,
+          "dateAssigned": 1502056800000,
+          "dateCompleted": null,
+          "createdOn": 1502135129552,
+          "updatedOn": null
+        },
+        {
+          "totalSkipped": 0,
+          "totalRejected": 0,
+          "user": {
+            "email": "greddy5680@gmail.com",
+            "created_on": 1502122590431,
+            "rating": 0.0,
+            "userId": 1,
+            "role": {
+              "roleId": 1,
+              "description": "Person completing illness form",
+              "name": "Collector"
+            },
+            "surname": "Reddy",
+            "name": "Govinda"
+          },
+          "idTask": 396,
+          "originalCount": 11,
+          "dateAssigned": 1502056800000,
+          "dateCompleted": null,
+          "createdOn": 1502135129552,
+          "updatedOn": null
+        },
+        {
+          "totalSkipped": 0,
+          "totalRejected": 0,
+          "user": {
+            "email": "greddy5680@gmail.com",
+            "created_on": 1502122590431,
+            "rating": 0.0,
+            "userId": 1,
+            "role": {
+              "roleId": 1,
+              "description": "Person completing illness form",
+              "name": "Collector"
+            },
+            "surname": "Reddy",
+            "name": "Govinda"
+          },
+          "idTask": 396,
+          "originalCount": 11,
+          "dateAssigned": 1502056800000,
+          "dateCompleted": null,
+          "createdOn": 1502135129552,
+          "updatedOn": null
+        },
+        {
+          "totalSkipped": 0,
+          "totalRejected": 0,
+          "user": {
+            "email": "greddy5680@gmail.com",
+            "created_on": 1502122590431,
+            "rating": 0.0,
+            "userId": 1,
+            "role": {
+              "roleId": 1,
+              "description": "Person completing illness form",
+              "name": "Collector"
+            },
+            "surname": "Reddy",
+            "name": "Govinda"
+          },
+          "idTask": 396,
+          "originalCount": 11,
+          "dateAssigned": 1502056800000,
+          "dateCompleted": null,
+          "createdOn": 1502135129552,
+          "updatedOn": null
+        }
+      ],
+      "totalElements": 13
+    },
+    "2": {
+      "taskList": [
+        {
+          "totalSkipped": 0,
+          "totalRejected": 0,
+          "user": {
+            "email": "greddy5680@gmail.com",
+            "created_on": 1502122590431,
+            "rating": 0.0,
+            "userId": 1,
+            "role": {
+              "roleId": 1,
+              "description": "Person completing illness form",
+              "name": "Collector"
+            },
+            "surname": "Reddy",
+            "name": "Govinda"
+          },
+          "idTask": 396,
+          "originalCount": 11,
+          "dateAssigned": 1502056800000,
+          "dateCompleted": null,
+          "createdOn": 1502135129552,
+          "updatedOn": null
+        },
+        {
+          "totalSkipped": 0,
+          "totalRejected": 0,
+          "user": {
+            "email": "greddy5680@gmail.com",
+            "created_on": 1502122590431,
+            "rating": 0.0,
+            "userId": 1,
+            "role": {
+              "roleId": 1,
+              "description": "Person completing illness form",
+              "name": "Collector"
+            },
+            "surname": "Reddy",
+            "name": "Govinda"
+          },
+          "idTask": 396,
+          "originalCount": 11,
+          "dateAssigned": 1502056800000,
+          "dateCompleted": null,
+          "createdOn": 1502135129552,
+          "updatedOn": null
+        },
+        {
+          "totalSkipped": 0,
+          "totalRejected": 0,
+          "user": {
+            "email": "greddy5680@gmail.com",
+            "created_on": 1502122590431,
+            "rating": 0.0,
+            "userId": 1,
+            "role": {
+              "roleId": 1,
+              "description": "Person completing illness form",
+              "name": "Collector"
+            },
+            "surname": "Reddy",
+            "name": "Govinda"
+          },
+          "idTask": 396,
+          "originalCount": 11,
+          "dateAssigned": 1502056800000,
+          "dateCompleted": null,
+          "createdOn": 1502135129552,
+          "updatedOn": null
+        }
+      ],
+      "totalElements": 13
+    }
+  }
+}

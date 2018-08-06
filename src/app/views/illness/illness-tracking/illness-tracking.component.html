@@ -1,0 +1,29 @@
+<div>
+  <div class="title" [class.loading]="loadingCurrentData">
+    <h1>Tracking:</h1>
+    <div *ngIf="loadingCurrentData" class="cssload-loader"></div>
+  </div>
+  <div class="d-flex flex-column">
+    <div class="d-flex justify-content-between pagination-wrapper" >
+      <ngb-pagination *ngIf="currentData.length !== 0" [collectionSize]="totalElements" [(page)]="page" [maxSize]="5" [pageSize]="pageSize" [rotate]="true" [boundaryLinks]="true" (pageChange)="changePage($event)"></ngb-pagination>
+      <div ngbDropdown class="d-inline-block" *ngIf="currentData.length !== 0">
+        <button class="btn btn-secondary dropdown-toggle" id="itemsPerPageDropdown" ngbDropdownToggle>
+          {{pageSize}}
+        </button>
+        <div class="dropdown-menu" aria-labelledby="itemsPerPageDropdown">
+          <button type="button" *ngFor="let itemsNumber of pageSizes" id="history-selector" class="dropdown-item" (click)="setPageSize(itemsNumber)">
+            {{itemsNumber}}
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <button class="btn btn-link btn-sm" *ngFor="let letter of letters" ngClass="{{letter === filterByICD ? 'bg-primary active' : ''}}" (click)="setLetter(letter)">
+        {{letter}}
+      </button>
+    </div>
+  </div>
+  <mita-illness-table *ngIf="!loadingCurrentData" [illnesses]="currentData" [selectedIllnessICD]="selectedIllness ? selectedIllness.id_icd10_code : null" [selectedIllnessVersion]="selectedIllness ? selectedIllness.version_number : null" (illnessSelected)="selectIllness($event)"></mita-illness-table>
+  <ngb-pagination *ngIf="!loadingCurrentData && currentData.length !== 0" [collectionSize]="totalElements" [(page)]="page" [maxSize]="5" [pageSize]="pageSize" [rotate]="true" [boundaryLinks]="true" (pageChange)="changePage($event)"></ngb-pagination>
+  <mita-illness-progress *ngIf="currentData.length !== 0" [progress]="progress"></mita-illness-progress>
+</div>

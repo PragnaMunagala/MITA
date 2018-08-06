@@ -1,0 +1,14 @@
+{
+    "block": "A01",
+    "description": "Typhoid and paratyphoid fevers",
+    "totalInBlock": 14,
+    "notAssigned": 0,
+    "children": [
+        {
+            "block": "A01.0",
+            "description": "Typhoid fever",
+            "totalInBlock": 10,
+            "notAssigned": 0
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+<table class="illness-table">
+  <thead>
+    <th>ICD10</th>
+    <th>Version</th>
+    <th>Name</th>
+    <th>State</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let illness of illnesses">
+      <td>{{illness.idIcd10Code}}</td>
+      <td>{{illness.version}}</td>
+      <td>{{illness.name}}</td>
+      <td>{{illness.state}}</td>
+    </tr>
+  </tbody>
+</table>

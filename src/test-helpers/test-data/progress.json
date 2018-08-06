@@ -1,0 +1,34 @@
+{
+  "progressVOList": [
+    {
+      "task_collector": {
+        "idTask": 396,
+        "userId": {
+          "userId": 1,
+          "email": "greddy5680@gmail.com",
+          "auth0Id": null,
+          "created_on": 1502129790431,
+          "rating": 0,
+          "surname": "Reddy",
+          "role": {
+            "roleId": 1,
+            "description": "Person completing illness form",
+            "name": "Collector"
+          },
+          "name": "Govinda"
+        },
+        "originalCount": 11,
+        "dateAssigned": 1502064000000,
+        "dateCompleted": null,
+        "createdOn": 1502142329552,
+        "updatedOn": null,
+        "totalSkipped": 0,
+        "totalRejected": 0
+      },
+      "task_reviewer": null,
+      "id_icd10_code": "A01.3",
+      "progress_id": 2919
+    }
+  ],
+  "totalElements": 1
+}

@@ -1,0 +1,63 @@
+@import "../../../styles/bootstrap/variables"
+
+.title
+  margin: 3rem 0
+  position: relative
+  text-align: center
+  h1
+    margin-bottom: 1rem
+  .cssload-loader
+    margin-left: -2em
+
+.history
+  min-height: 15rem
+  .cssload-loader
+    margin-top: 1rem
+
+.user-rating-item
+  align-items: center
+  display: flex
+  justify-content: space-between
+  .badge
+    align-items: center
+    display: flex
+
+.current
+  tbody
+    tr
+      cursor: pointer
+
+table
+  thead
+    .no-border
+      border: 0
+    th
+      border-bottom: 0
+      h3
+        margin-bottom: 0
+  .select-container
+    border-top: 0
+    position: relative
+    ng-select
+      left: 5px
+      position: absolute
+      top: 0
+
+.btn
+  cursor: pointer
+
+/deep/
+  .dropdown-menu
+    min-width: 100%
+  .ui-select-match-text
+    display: inline-block
+    .badge
+      margin-left: .8rem
+
+.progress-bar
+  &.short
+    color: $black
+
+/deep/
+  .ui-select-container
+    max-width: 14rem

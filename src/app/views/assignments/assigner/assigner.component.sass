@@ -1,0 +1,55 @@
+@import "../../../../styles/bootstrap/variables"
+@import "../../../../styles/bootstrap/mixins"
+
+.current-selection
+  background: $gray-light
+  color: $gray-lightest
+  min-height: 9rem
+  .row
+    min-height: 9rem
+  .no-selection
+    flex-direction: column
+  .badge
+    &.block
+      font-size: 1rem
+
+.assignment-section
+  align-items: center
+  display: flex
+  &.buttons-container,
+  &.growing
+    flex-direction: column
+    justify-content: center
+  &.growing
+    align-items: baseline
+    flex-direction: column
+    h5
+      border-bottom: 1px solid $gray-lightest
+    .badge
+      margin-top: 1rem
+
+.clickable
+  cursor: pointer
+
+/* Give some space to the select options menu as it will always be at the bottom */
+/deep/
+  &.ui-select-choices
+    &.dropdown-menu
+      margin-bottom: 2rem
+
+@include media-breakpoint-only(md)
+  .assignment-section
+    &.right
+      margin-top: 2rem
+
+@include media-breakpoint-down(md)
+  .assignment-section
+    margin-top: 2rem
+.loading
+  vertical-align: bottom
+  animation: rotate 1s infinite linear
+@keyframes rotate
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)

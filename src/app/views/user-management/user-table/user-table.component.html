@@ -1,0 +1,29 @@
+<h2 class="title">{{role | uppercase}}S</h2>
+<div *ngIf="!users || !users.length" class="alert alert-info text-center mt-5">
+  <p class="material-icons md-48 text-warning">persona</p>
+  <h2>No {{role}} registered yet</h2>
+</div>
+<table *ngIf="users?.length" class="table table-striped mt-1">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>User Since</th>
+      <th *ngIf="role === 'collector'">Rating</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="user-row" *ngFor="let user of users; let idx = index">
+      <th scope="row">{{user.userId}}</th>
+      <td>{{user.name}}</td>
+      <td>{{user.surname}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.createdOn | date}}</td>
+      <td *ngIf="role === 'collector'">{{user.rating}}</td>
+      <td><button type="button" class="btn btn-sm btn-link" (click)="openModalDialog(idx)"><i class="material-icons">delete_forever</i></button></td>
+    </tr>
+  </tbody>
+</table>

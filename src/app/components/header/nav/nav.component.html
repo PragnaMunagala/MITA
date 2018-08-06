@@ -1,0 +1,21 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-primary rounded w-100 justify-content-between">
+  <div class="page-title">
+    <a class="navbar-brand" routerLink="">MITA</a>
+    <span class="version">v{{version}}</span>
+  </div>
+
+  <ul class="navbar-nav align-items-center">
+    <li *ngFor="let item of navItems" class="nav-item">
+      <a *ngIf="!item.children" routerLink="{{item.path}}" routerLinkActive="active" class="nav-link">{{item.name}}</a>
+      <div ngbDropdown id="assignment-dropdown" *ngIf="item.children" class="d-inline-block" routerLinkActive="active">
+        <a class="nav-link" [id]="'topDropdown' + item.name" ngbDropdownToggle>{{item.name}}</a>
+        <div class="dropdown-menu" [attr.aria-labelledby]="'topDropdown' + item.name">
+          <a *ngFor="let ch of item.children" routerLink="{{ch.path}}" class="dropdown-item">
+            <i class="material-icons">{{ch.icon}}</i>
+            <span>{{ch.name}}</span>
+          </a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,17 @@
+.table
+  thead
+    th
+      border-top: none
+
+button
+  cursor: pointer
+
+tr
+  cursor: pointer
+  &.disabled
+    cursor: not-allowed
+    &.selected
+      cursor: default
+      background-color: #d5d7d8
+      &:focus
+        background-color: #d5d7d8 !important

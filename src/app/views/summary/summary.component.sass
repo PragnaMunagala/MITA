@@ -1,0 +1,36 @@
+@import "../../../styles/bootstrap/variables"
+
+.percent,
+.stats
+  border: 2px solid $brand-primary
+  display: flex
+  height: 100%
+
+.percent
+  align-items: center
+  font-size: 200%
+  justify-content: center
+  &.total
+    border: 0
+    color: $gray-lighter
+    font-size: 250%
+    font-weight: bold
+
+.stats
+  flex-direction: column
+  padding: .5rem 1rem
+  p
+    align-items: center
+    display: flex
+    margin-bottom: .2rem
+    .badge
+      flex-basis: 4rem
+  &.success
+    border-color: $brand-success
+  &.warning
+    border-color: $brand-warning
+  &.danger
+    border-color: $brand-danger
+
+.chapter
+  margin-bottom: .2rem

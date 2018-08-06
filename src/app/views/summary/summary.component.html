@@ -1,0 +1,82 @@
+<div *ngIf="!progressData" class="cssload-loader"></div>
+<div *ngIf="progressData" class="mt-3 mb-3">
+  <h1 class="text-center">Summary</h1>
+  <div class="row justify-content-between mt-1 mb-1">
+    <div class="col-sm-12 col-md-3">
+      <div class="percent total rounded"
+        [ngClass]="{
+          'bg-success': totalCompletedPercent === 100,
+          'bg-warning': totalCompletedPercent > 0 && totalCompletedPercent < 100,
+          'bg-danger': totalCompletedPercent === 0
+        }">
+        {{totalCompletedPercent | number : '1.2-2'}}%
+      </div>      
+    </div>
+    <div class="col-sm-12 col-md-8">
+      <div class="stats total rounded"
+        [ngClass]="{
+          'success': totalCompletedPercent === 100,
+          'warning': totalCompletedPercent > 0 && totalCompletedPercent < 100,
+          'danger': totalCompletedPercent === 0
+        }">
+        <p>
+          <span class="badge badge-pill badge-default mr-1">{{total | number}}</span>
+          Illnesses in Database (excluding chapter XX)
+        </p>
+        <p>
+          <span class="badge badge-pill mr-1"
+                [ngClass]="{
+                  'badge-warning': totalAssigned > 0,
+                  'badge-default': totalAssigned <= 0}">
+            {{totalAssigned | number}}
+          </span>
+          Illnesses assigned to a Data Collector
+        </p>
+        <p>
+          <span class="badge badge-pill mr-1"
+                [ngClass]="{
+                  'badge-success': totalCompleted === total,
+                  'badge-warning': totalCompleted < total && totalCompleted > 0,
+                  'badge-danger': totalCompleted === 0}">
+            {{totalCompleted}}
+          </span>
+          Complete
+        </p>
+      </div>
+    </div>
+  </div>
+  <div *ngFor="let data of progressData" class="row chapter justify-content-between">
+    <div class="col-sm-12 col-md-3">
+      <div class="percent rounded">
+        {{completedPercent(data) | number : '1.0-2'}}%
+      </div>      
+    </div>
+    <div class="col-sm-12 col-md-8">
+      <div class="stats rounded">
+        <p>
+          <span class="badge badge-pill badge-default mr-1">{{data.totalinblock}}</span>
+          Chapter {{data.id | romanize}} ({{data.block}}) entries in Database
+        </p>
+        <p>
+          <span class="badge badge-pill mr-1"
+                [ngClass]="{
+                  'badge-warning': assigned(data) > 0,
+                  'badge-default': assigned(data) <= 0}">
+            {{data.totalinblock - data.notassigned}}
+          </span>
+          Illnesses assigned to a Data Collector
+        </p>
+        <p>
+          <span class="badge badge-pill mr-1"
+                [ngClass]="{
+                  'badge-success': data.complete === data.totalinblock,
+                  'badge-warning': data.complete < data.totalinblock && data.complete > 0,
+                  'badge-danger': data.complete === 0}">
+            {{data.complete}}
+          </span>
+          Complete
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

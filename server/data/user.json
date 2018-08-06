@@ -1,0 +1,72 @@
+[
+    {
+        "userId": 1,
+        "role": {
+            "roleId": 1,
+            "name": "Collector",
+            "description": "Person completing illness form"
+        },
+        "name": "John",
+        "surname": "Doe"
+    },
+    {
+        "userId": 2,
+        "role": {
+            "roleId": 1,
+            "name": "Collector",
+            "description": "Person completing illness form"
+        },
+        "name": "Mary",
+        "surname": "Smith"
+    },
+    {
+        "userId": 3,
+        "role": {
+            "roleId": 1,
+            "name": "Collector",
+            "description": "Person completing illness form"
+        },
+        "name": "Juan",
+        "surname": "Jimenez"
+    },
+    {
+        "userId": 4,
+        "role": {
+            "roleId": 1,
+            "name": "Collector",
+            "description": "Person completing illness form"
+        },
+        "name": "Jim",
+        "surname": "Shelby"
+    },
+    {
+        "userId": 5,
+        "role": {
+            "roleId": 2,
+            "name": "Reviewer",
+            "description": "Person reviewing block jobs"
+        },
+        "name": "Laura",
+        "surname": "Fowler"
+    },
+    {
+        "userId": 6,
+        "role": {
+            "roleId": 2,
+            "name": "Reviewer",
+            "description": "Person reviewing block jobs"
+        },
+        "name": "Rod",
+        "surname": "Nelson"
+    },
+    {
+        "userId": 7,
+        "role": {
+            "roleId": 3,
+            "name": "Administrator",
+            "description": "Person assigning block jobs. Admin, of MITA system"
+        },
+        "name": "Michael",
+        "surname": "Kidroy"
+    }
+]

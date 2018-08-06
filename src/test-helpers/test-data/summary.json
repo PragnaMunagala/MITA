@@ -1,0 +1,172 @@
+{
+  "summary": [
+    {
+      "id": 1,
+      "description": "Certain infectious and parasitic diseases",
+      "totalinblock": 1057,
+      "notassigned": 1052,
+      "complete": 5,
+      "block": "A00-B99"
+    },
+    {
+      "id": 2,
+      "description": "Neoplasms",
+      "totalinblock": 1631,
+      "notassigned": 1613,
+      "complete": 0,
+      "block": "C00-D49"
+    },
+    {
+      "id": 3,
+      "description": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism",
+      "totalinblock": 247,
+      "notassigned": 247,
+      "complete": 0,
+      "block": "D50-D89"
+    },
+    {
+      "id": 4,
+      "description": "Endocrine, nutritional and metabolic diseases",
+      "totalinblock": 705,
+      "notassigned": 705,
+      "complete": 0,
+      "block": "E00-E89"
+    },
+    {
+      "id": 5,
+      "description": "Mental, Behavioral and Neurodevelopmental disorders",
+      "totalinblock": 733,
+      "notassigned": 733,
+      "complete": 0,
+      "block": "F01-F99"
+    },
+    {
+      "id": 6,
+      "description": "Diseases of the nervous system",
+      "totalinblock": 613,
+      "notassigned": 613,
+      "complete": 0,
+      "block": "G00-G99"
+    },
+    {
+      "id": 7,
+      "description": "Diseases of the eye and adnexa",
+      "totalinblock": 2321,
+      "notassigned": 2321,
+      "complete": 0,
+      "block": "H00-H59"
+    },
+    {
+      "id": 8,
+      "description": "Diseases of the ear and mastoid process",
+      "totalinblock": 656,
+      "notassigned": 636,
+      "complete": 0,
+      "block": "H60-H95"
+    },
+    {
+      "id": 9,
+      "description": "Diseases of the circulatory system",
+      "totalinblock": 1329,
+      "notassigned": 1329,
+      "complete": 0,
+      "block": "I00-I99"
+    },
+    {
+      "id": 10,
+      "description": "Diseases of the respiratory system",
+      "totalinblock": 341,
+      "notassigned": 341,
+      "complete": 0,
+      "block": "J00-J99"
+    },
+    {
+      "id": 11,
+      "description": "Diseases of the digestive system",
+      "totalinblock": 774,
+      "notassigned": 756,
+      "complete": 0,
+      "block": "K00-K95"
+    },
+    {
+      "id": 12,
+      "description": "Diseases of the skin and subcutaneous tissue",
+      "totalinblock": 774,
+      "notassigned": 774,
+      "complete": 0,
+      "block": "L00-L99"
+    },
+    {
+      "id": 13,
+      "description": "Diseases of the musculoskeletal system and connective tissue",
+      "totalinblock": 5301,
+      "notassigned": 5277,
+      "complete": 0,
+      "block": "M00-M99"
+    },
+    {
+      "id": 14,
+      "description": "Diseases of the genitourinary system",
+      "totalinblock": 640,
+      "notassigned": 619,
+      "complete": 0,
+      "block": "N00-N99"
+    },
+    {
+      "id": 15,
+      "description": "Pregnancy, childbirth and the puerperium",
+      "totalinblock": 1320,
+      "notassigned": 1320,
+      "complete": 0,
+      "block": "O00-O9A"
+    },
+    {
+      "id": 16,
+      "description": "Certain conditions originating in the perinatal period",
+      "totalinblock": 419,
+      "notassigned": 419,
+      "complete": 0,
+      "block": "P00-P96"
+    },
+    {
+      "id": 17,
+      "description": "Congenital malformations, deformations and chromosomal abnormalities",
+      "totalinblock": 808,
+      "notassigned": 808,
+      "complete": 0,
+      "block": "Q00-Q99"
+    },
+    {
+      "id": 18,
+      "description": "Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified",
+      "totalinblock": 633,
+      "notassigned": 633,
+      "complete": 0,
+      "block": "R00-R99"
+    },
+    {
+      "id": 19,
+      "description": "Injury, poisoning and certain other consequences of external causes",
+      "totalinblock": 9955,
+      "notassigned": 9953,
+      "complete": 2,
+      "block": "S00-T88"
+    },
+    {
+      "id": 20,
+      "description": "External causes of morbidity",
+      "totalinblock": 2590,
+      "notassigned": 2590,
+      "complete": 0,
+      "block": "V00-Y99"
+    },
+    {
+      "id": 21,
+      "description": "Factors influencing health status and contact with health services",
+      "totalinblock": 1215,
+      "notassigned": 1215,
+      "complete": 0,
+      "block": "Z00-Z99"
+    }
+  ]
+}

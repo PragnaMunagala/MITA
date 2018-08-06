@@ -1,0 +1,5 @@
+<a routerLink="" class="user-menu btn-icon">
+  <i class="material-icons mi-24 mr-2">face</i>
+  <h5 class="m-0 d-inline">{{(auth.user$ | async)?.name}}</h5>
+</a>
+<button (click)="onLogOut()" type="button" class="btn btn-warning btn-sm ml-2">Log Out</button>
